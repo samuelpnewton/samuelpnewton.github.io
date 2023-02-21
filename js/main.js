@@ -798,7 +798,7 @@ function documentReadyInit() {
 			date = new Date(date);
 		} else {
 			date = new Date();
-			date.setMonth(date.getMonth()+3);
+			date.setMonth(date.getMonth()+6);
 		}
 		$counter.countdown({until: date, format: 'ODHMS'});
 	}
