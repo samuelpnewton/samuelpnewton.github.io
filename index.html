@@ -7,7 +7,7 @@
 <!--<![endif]-->
 
 <head>
-	<title>Lightbook - Bootstrap 4 premium SinglePage and MultePage HTML template</title>
+	<title>Samuel P. Newton, Assistant Professor of Law</title>
 	<meta charset="utf-8">
 	<!--[if IE]>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no">
-	<meta http-equiv="Content-language" content="en"><!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animations.css">
@@ -162,30 +162,40 @@
 
 			<!-- template sections -->
 
-	<!-- header with three Bootstrap columns - left for logo, center for navigation and right for includes-->
-		  
-	<!--topline section visible only on small screens|-->
-			<section class="page_topline ds s-py-15 s-borderbottom d-xl-none">
+<!--topline section-->
+			<section class="page_topline ds s-py-10 c-my-10">
 				<div class="container-fluid">
 					<div class="row align-items-center">
-						<div class="col-8 text-left">
-							<span class="social-icons">
-
-								<a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a>
-								<a href="https://twitter.com/" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
-								<a href="https://www.linkedin.com/" class="fa fa-linkedin border-icon rounded-icon" title="linkedin"></a>
-								<a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
-								<a href="https://www.youtube.com/" class="fa fa-youtube-play border-icon rounded-icon" title="youtube"></a>
-
-							</span>
+						<div class="col-lg-6 text-lg-left text-center d-none d-lg-block">
+							<p><strong class="color-darkgrey"></strong></p>
 						</div>
-						<div class="col-4 text-right">
-							<!--modal search-->
-							<span>
-								<a href="#" class="search_modal_button hidden-below-xl">
-									<i class="fa fa-search"></i>
-								</a>
-							</span>
+						<div class="col-lg-6 text-lg-right text-center">
+
+							<ul class="top-includes border-divided small-text">
+
+							
+
+
+								<li>
+									<span>
+										<a href="#" data-target="#popupRegistr" data-toggle="modal"><i class="fa fa-lock"></i> Register</a>
+									</span>
+								</li>
+
+
+								<li>
+									<span class="social-icons">
+
+										<a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a>
+										<a href="https://twitter.com/" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
+										<a href="https://www.linkedin.com/" class="fa fa-linkedin border-icon rounded-icon" title="linkedin"></a>
+										<a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
+										<a href="https://www.youtube.com/" class="fa fa-youtube-play border-icon rounded-icon" title="youtube"></a>
+
+									</span>
+								</li>
+
+							</ul>
 
 						</div>
 					</div>
@@ -193,18 +203,76 @@
 			</section>
 			<!--eof topline-->
 
-			<!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
-	<header class="page_header ls justify-nav-end">
+			<section class="page_toplogo ls ms s-py-30">
 				<div class="container-fluid">
 					<div class="row align-items-center">
-						<div class="col-xl-3 col-lg-4 col-md-5 col-11-xl-3 col-lg-4 col-md-5 col-11">
-							<a href="./" class="logo">
-								<img src="images/logo.png" alt="img">
-							</a>
-						</div>
-						<div class="col-xl-9 col-lg-8 col-md-7 col-1-xl-9 col-lg-8 col-md-7 col-1">
-							<div class="nav-wrap">
+						<div class="col-lg-12">
 
+							<div class="d-lg-flex justify-content-lg-end align-items-lg-center">
+								<div class="mr-auto">
+									<!--
+							if you want to display toplogo info on smaller screens
+							than use following CSS classes below:
+						 	d-sm-flex justify-content-sm-center
+						 -->
+									<div class="d-flex justify-content-center justify-content-lg-start">
+										<a href="./" class="logo">
+											<img src="images/logo.png" alt="img">
+										</a>
+									</div>
+								</div>
+								<!--
+						if you want to display toplogo info on smaller screens
+						than use following CSS classes below:
+						d-sm-flex justify-lg-content-end justify-content-sm-between align-items-center
+					-->
+								<div class="d-none d-lg-flex justify-lg-content-end align-items-center">
+									<div class="media">
+										<div class="icon-styled bordered round color-main fs-20">
+											<i class="fa fa-map-marker"></i>
+										</div>
+
+										<div class="media-body">
+											<h4 class="fs-20 mt-0">
+												<strong><a href="https://www.uidaho.edu/law/people/faculty/sam-newton">University of Idaho&nbsp;</a></strong>
+											</h4>
+											<p>
+											  711 S. Rayburn Drive, Moscow, Idaho
+											</p>
+									  </div>
+									</div>
+
+									<div class="media">
+										<div class="icon-styled bordered round color-main fs-20">
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="media-body">
+											<h4 class="fs-20 mt-0">
+												<strong>(208) 885-7936</strong>
+											</h4>
+											<p>Main Office: (208) 885-2255</p>
+									  </div>
+									</div>
+
+
+								</div>
+
+							</div>
+
+							<!-- header toggler -->
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- header with single Bootstrap column only for navigation and includes. Used with topline and toplogo sections. Menu toggler must be in toplogo section -->
+			<header class="page_header ls s-bordertop nav-narrow">
+				<div class="container-fluid">
+					<div class="row align-items-center">
+						<div class="col-xl-12">
+
+							<div class="nav-wrap">
 								<!-- main nav start -->
 								<nav class="top-nav">
 									<ul class="nav sf-menu">
@@ -724,46 +792,41 @@
 								</nav>
 								<!-- eof main nav -->
 
-								<!--hidding includes on small devices. They are duplicated in topline-->
-								<ul class="top-includes d-none d-xl-block">
-									<li>
-										<span class="social-icons">
 
-											<a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a>
-											<a href="https://twitter.com/" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
-											<a href="https://www.linkedin.com/" class="fa fa-linkedin border-icon rounded-icon" title="linkedin"></a>
-											<a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
-											<a href="https://www.youtube.com/" class="fa fa-youtube-play border-icon rounded-icon" title="youtube"></a>
+								<!--modal search-->
+								<span>
+									<a href="#" class="search_modal_button hidden-below-xl">
+										<i class="fa fa-search"></i>
+									</a>
+								</span>
 
-										</span>
-									</li>
+
+								<ul class="top-includes">
+
 
 									<li>
-										<!--modal search-->
-										<span>
-											<a href="#" class="search_modal_button hidden-below-xl">
-												<i class="fa fa-search"></i>
-											</a>
+										<span class="hidden-below-xl">
+											<a href="https://outlook.office365.com/owa/calendar/DrSamuelPNewton@vandalsuidaho.onmicrosoft.com/bookings/" class="btn btn-maincolor">Book an Appointment</a>
 										</span>
-
 									</li>
 
 
 								</ul>
 
+
 							</div>
+
 						</div>
 					</div>
 				</div>
-				<!-- header toggler -->
-				<span class="toggle_menu"><span></span></span>
-			</header>
-<section class="ls s-py-90 s-py-xl-160 c-gutter-60"> </section>
 
-  </div>
-					</div>
-				</div>
-	</header>
+				<!-- header toggler -->
+
+				<span class="toggle_menu"><span></span></span>
+
+			</header>
+
+
 
 			
 <section id="author" class="ls s-overlay mobile-overlay s-py-90 s-py-xl-150 section-about">
@@ -771,16 +834,15 @@
 					<div class="row">
 						<div class="col-lg-6">
 							<div class="divider-xl-200"></div>
-							<p class="mb-2 color-dark">Assistant Professor of Law, University of Idaho&nbsp; &nbsp;</p>
+							<p class="mb-2 color-dark"></p>
 							<h2 class="special-heading">
 								<span>Samuel P. Newton</span>
 							</h2>
 							<div class="divider-40"></div>
 							<p class="excerpt">
-						    Assist&nbsp; </p>
+						    Assistant Professor of Law<br>
+						    University of Idaho College of Law&nbsp; &nbsp;&nbsp; </p>
 							<div class="divider-40"></div>
-							<p>
-						    Before joining the University of Idaho College of Law, Samuel Newton worked for both prosecuting and public defender organizations in Utah and Montana, focusing much of his practice on appellate advocacy and capital defense litigation. He is a licensed attorney in Colorado, Montana, and Utah. He is a former professor of criminal justice at Weber State University in Ogden, Utah. His research areas of interest include civil disobedience, peace studies, and the death penalty. His work has been cited by various courts, media organizations as well as other scholarly publications, including the Harvard Law Review, Virginia Law Review, and Alabama Law Review. </p>
 							<div class="divider-40"></div>
 							<div class="columns-two">
 							  <a href="shop-product-full.html" class="btn btn-maincolor">Bio / CV&nbsp; &nbsp;&nbsp;</a>
@@ -836,124 +898,145 @@
     </div>
   </div>
 </section>
-<section id="chapter" class="ls s-overlay mobile-overlay s-py-90 s-py-xl-150 section-book">
-		<div class="container">
+
+<section id="faqs" class="ls ms s-py-90 s-py-xl-150 c-gutter-50">
+				<div class="container">
 					<div class="row">
-						<div class="col-lg-6 ml-auto">
-							<div class="divider-xl-110"></div>
-							<h3 class="special-heading">
-								<span>Introduction.</span>
-							</h3>
+						<div class="col-12">
+							<h2 class="special-heading">
+								<span>Publications</span>
+							</h2>
 							<div class="divider-40"></div>
-							<div class="scroll-block">
-								<p class="first-letter">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua uenim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-								</p>
-								<p>
-									Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. , totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-								</p>
-							</div>
-							<div class="divider-xl-100"></div>
 						</div>
-					</div>
-	  </div>
-    </section>
-<section id="blog" class="ls s-py-90 s-py-xl-160">
-		<div class="container">
-					<div class="row">
-						<div class="col-12 text-center">
-<h2 class="special-heading">
-				<span>Recent Publications&nbsp;</span>
-			  </h2>
-							<div class="divider-60 divider-xl-70"></div>
-							<div class="owl-carousel owl-nav-bottom" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="1" data-responsive-xs="1" data-nav="true" data-margin="60" data-loop="true" data-autoplay="true">
-								<article class="text-center post-grid-item post type-post status-publish format-standard has-post-thumbnail">
-									<div class="item-media post-thumbnail">
-										<img src="images/gallery-square/17.jpg" alt="img">
-										<div class="media-links">
-											<a class="abs-link" href="blog-single-@@type.html"></a>
+						<div class="col-lg-6">
+						<h3>Books</h3>
+							<div id="accordion01" role="tablist">
+								<div class="card">
+									<div class="card-header" role="tab" id="collapse01_header">
+										<h5>
+											<a data-toggle="collapse" href="#collapse01" aria-expanded="true" aria-controls="collapse01">
+											Samuel P. Newton, <em>Joseph Smith and Mormon Resistance in Antebellum America, 1827-1844,</em> (Oxford University Press, forthcoming)</a>
+										</h5>
+									</div>
+
+									<div id="collapse01" class="collapse show" role="tabpanel" aria-labelledby="collapse01_header" data-parent="#accordion02">
+										<div class="card-body">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										  </p>
+											<ul class="list-unstyled">
+												<li>
+													5.1. Introduction to NoSQL
+												</li>
 										</div>
-										<p class="item-meta">
-											<span class="time-meta">March 31, 2020</span>
-										</p>
-									</div><!-- .post-thumbnail -->
-									<div class="item-content">
-										<header class="entry-header">
-											<h4 class="entry-title">
-												<a href="blog-single-@@type.html" rel="bookmark">
-													Lorem ipsum dolor sit consectetur
-												</a>
-											</h4>
-											<!-- .entry-meta -->
-										</header>
-									</div><!-- .item-content -->
-								</article><!-- #post-## -->
-								<article class="text-center post-grid-item post type-post status-publish format-standard has-post-thumbnail">
-									<div class="item-media post-thumbnail">
-										<img src="images/gallery-square/01.jpg" alt="img">
-										<div class="media-links">
-											<a class="abs-link" href="blog-single-@@type.html"></a>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" role="tab" id="collapse02_header">
+										<h5>
+											<a class="collapsed" data-toggle="collapse" href="#collapse02" aria-expanded="true" aria-controls="collapse02">
+											Samuel P. Newton and Teresa L. Welch, <em>Understanding Criminal Evidence: A Case-Method Approach</em> (Wolters-Kluwer, 2012) </a>
+										</h5>
+									</div>
+
+									<div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="collapse02_header" data-parent="#accordion01">
+										<div class="card-body">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+										  </p>
 										</div>
-										<p class="item-meta">
-											<span class="time-meta">March 27, 2020</span>
-										</p>
-									</div><!-- .post-thumbnail -->
-									<div class="item-content">
-										<header class="entry-header">
-											<h4 class="entry-title">
-												<a href="blog-single-@@type.html" rel="bookmark">
-													Adipisicing elit, sed do eiusmod tempor
-												</a>
-											</h4>
-										</header>
-										<!-- .entry-header -->
-									</div><!-- .item-content -->
-								</article><!-- #post-## -->
-								<article class="text-center post-grid-item post type-post status-publish format-standard has-post-thumbnail">
-									<div class="item-media post-thumbnail">
-										<img src="images/gallery-square/03.jpg" alt="img">
-										<div class="media-links">
-											<a class="abs-link" href="blog-single-@@type.html"></a>
-										</div>
-										<p class="item-meta">
-											<span class="time-meta">March 20, 2020</span>
-										</p>
-									</div><!-- .post-thumbnail -->
-									<div class="item-content">
-										<header class="entry-header">
-											<h4 class="entry-title">
-												<a href="blog-single-@@type.html" rel="bookmark">
-													Incididunt ut labore et dolore magna
-												</a>
-											</h4>
-										</header>
-									</div><!-- .item-content -->
-								</article><!-- #post-## -->
-								<article class="text-center post-grid-item post type-post status-publish format-standard has-post-thumbnail">
-									<div class="item-media post-thumbnail">
-										<img src="images/gallery-square/04.jpg" alt="img">
-										<div class="media-links">
-											<a class="abs-link" href="blog-single-@@type.html"></a>
-										</div>
-										<p class="item-meta">
-											<span class="time-meta">March 04, 2020</span>
-										</p>
-									</div><!-- .post-thumbnail -->
-									<div class="item-content">
-										<header class="entry-header">
-											<h4 class="entry-title">
-												<a href="blog-single-@@type.html" rel="bookmark">
-													Lorem ipsum dolor sit consectetur
-												</a>
-											</h4>
-										</header>
-									</div><!-- .item-content -->
-								</article><!-- #post-## -->
+									</div>
+								</div>
 							</div>
 						</div>
+						<div class="col-lg-6">
+						<h3>Articles</h3>
+							<div id="accordion02" role="tablist">
+								<div class="card">
+									<div class="card-header" role="tab" id="collapse03_header">
+										<h5>
+											<a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="true" aria-controls="collapse03">
+											Samuel P. Newton, “Getting to Know You: An Expanded Approach to Capital Jury Selection,” <em>Tulane Law Review </em> (2021)</a>
+										</h5>
+									</div>
+
+									<div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header" data-parent="#accordion01">
+										<div class="card-body">
+											<ul class="list-unstyled">
+												<li>
+													5.1. Introduction to NoSQL
+												</li>
+												<li>
+													5.2. Case study: What disease is that?
+												</li>
+												<li>
+													5.3. Summary
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header" role="tab" id="collapse04_header">
+										<h5>
+											<a class="collapsed" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
+												Samuel P. Newton, “Kidnapping Reconsidered: Courts’ Merger Tests Do Not Remedy the Inequities Which Developed From Kidnapping’s Sensationalized and Racialized History,” <em>William & Mary Bill of Rights Journal</em> (2020)
+											</a>
+										</h5>
+									</div>
+									<div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="collapse04_header" data-parent="#accordion02">
+										<div class="card-body">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header" role="tab" id="collapse05_header">
+										<h5>
+											<a class="collapsed" data-toggle="collapse" href="#collapse05" aria-expanded="false" aria-controls="collapse05">
+												Samuel P. Newton, “Giving Teeth to State Constitutions: Using History to Argue Utah’s Constitution Affords Greater Protections to Criminal Defendants,” <em>Utah Journal of Criminal Law</em> (2018)
+											</a>
+										</h5>
+									</div>
+									<div id="collapse05" class="collapse" role="tabpanel" aria-labelledby="collapse05_header" data-parent="#accordion02">
+										<div class="card-body">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="card">
+									<div class="card-header" role="tab" id="collapse06_header">
+										<h5>
+											<a data-toggle="collapse" href="#collapse06" aria-expanded="true" aria-controls="collapse06">
+												Samuel P. Newton, et al., “No Justice in Utah's Justice Courts: Constitutional Issues, Systemic Problems, and the Failure to Protect Defendants in Utah's Infamous Local Courts,” <em>Utah Law Review OnLaw</em> (cited in the <em>Harvard Law Review</em>) and <em>Virginia Law Review</em>
+											</a>
+										</h5>
+									</div>
+									<div id="collapse06" class="collapse show" role="tabpanel" aria-labelledby="collapse06_header" data-parent="#accordion02">
+										<div class="card-body">
+											<ul class="list-unstyled">
+											<li>
+													Cited in the <em>Harvard Law Review</em>
+												</li>
+												<li>
+													Cited in the <em>Virginia Law Review</em>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-	  </div>
-    </section>
+				</div>
+			</section>
 
 			<section id="mail" class="ls ms s-py-90 s-py-xl-160">
 				<div class="container">
@@ -969,21 +1052,21 @@
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-phone"></i>
 									</div>
-									<p>(800)-398-7586 or (800)-398-7594</p>
-								</li>contact
+									<p>(208) 885-7936</p>
 								<li class="icon-inline links-grey">
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-paper-plane-o"></i>
 									</div>
 									<p>
-										<a href="mailto:lightbook@support.com">lightbook@support.com</a>
+										<a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a>
 									</p>
 								</li>
 								<li class="icon-inline">
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-map-marker"></i>
 									</div>
-									<p>3230 Hood Avenue, San Diego, CA 92128</p>
+									<p>875 Perimeter Drive MS 2321<br>
+									Moscow, Idaho 83844</p>
 								</li>
 							</ul>
 							<div class="divider-35"></div>
