@@ -19,25 +19,77 @@ jobs:
       - name: Generate manifest.json
         run: |
           python3 - <<'EOF'
-          import json, os, re
+          import json, os, re, struct
 
           folder = "images/photography"
           exts = (".jpg", ".jpeg", ".png", ".webp", ".gif")
           skip = {"manifest.json", "placeholder.svg"}
-
-          files = sorted(
-              f for f in os.listdir(folder)
-              if f.lower().endswith(exts) and f not in skip
-          )
 
           def to_alt(filename):
               name = os.path.splitext(filename)[0]
               name = re.sub(r'[-_]+', ' ', name).strip()
               return name.title() if name else "Photograph"
 
-          manifest = [{"file": f, "alt": to_alt(f)} for f in files]
+          def get_size(path):
+              """Return (width, height) for JPEG/PNG/GIF, or None if undetermined."""
+              try:
+                  with open(path, "rb") as f:
+                      head = f.read(32)
+                      if head[:8] == b'\x89PNG\r\n\x1a\n':
+                          w, h = struct.unpack('>II', head[16:24])
+                          return w, h
+                      if head[:6] in (b'GIF87a', b'GIF89a'):
+                          w, h = struct.unpack('<HH', head[6:10])
+                          return w, h
+                      if head[:2] == b'\xff\xd8':
+                          f.seek(2)
+                          while True:
+                              marker = f.read(2)
+                              if len(marker) < 2 or marker[0] != 0xFF:
+                                  break
+                              if marker[1] in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7,
+                                                0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                                  f.read(3)
+                                  h, w = struct.unpack('>HH', f.read(4))
+                                  return w, h
+                              elif marker[1] in (0xD8, 0xD9):
+                                  continue
+                              else:
+                                  seg_len = struct.unpack('>H', f.read(2))[0]
+                                  f.seek(seg_len - 2, 1)
+              except Exception as e:
+                  print("size read failed for", path, e)
+              return None
 
-          with open(os.path.join(folder, "manifest.json"), "w") as fh:
+          files = sorted(
+              f for f in os.listdir(folder)
+              if f.lower().endswith(exts) and f not in skip
+          )
+
+          # preserve any hand-edited captions from the existing manifest
+          existing = {}
+          manifest_path = os.path.join(folder, "manifest.json")
+          if os.path.exists(manifest_path):
+              try:
+                  with open(manifest_path) as fh:
+                      for item in json.load(fh):
+                          existing[item.get("file")] = item
+              except Exception as e:
+                  print("could not read existing manifest:", e)
+
+          manifest = []
+          for f in files:
+              prev = existing.get(f, {})
+              size = get_size(os.path.join(folder, f))
+              entry = {
+                  "file": f,
+                  "alt": prev.get("alt") or to_alt(f),
+              }
+              if size:
+                  entry["w"], entry["h"] = size
+              manifest.append(entry)
+
+          with open(manifest_path, "w") as fh:
               json.dump(manifest, fh, indent=2)
               fh.write("\n")
           EOF

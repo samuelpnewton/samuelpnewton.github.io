@@ -1,22 +1,32 @@
 [
   {
     "file": "IMG_1730.jpeg",
-    "alt": "Img 1730"
+    "alt": "Img 1730",
+    "w": 944,
+    "h": 1129
   },
   {
     "file": "IMG_2214.jpeg",
-    "alt": "Img 2214"
+    "alt": "Img 2214",
+    "w": 896,
+    "h": 1195
   },
   {
     "file": "IMG_2215.jpeg",
-    "alt": "Img 2215"
+    "alt": "Img 2215",
+    "w": 896,
+    "h": 1195
   },
   {
     "file": "IMG_2281.PNG",
-    "alt": "Img 2281"
+    "alt": "Img 2281",
+    "w": 896,
+    "h": 1195
   },
   {
     "file": "IMG_3001.jpeg",
-    "alt": "Img 3001"
+    "alt": "Img 3001",
+    "w": 714,
+    "h": 950
   }
 ]
