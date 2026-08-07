@@ -1,247 +1,53 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html lang="en" class="no-js">
 
 <head>
-	<title>Samuel P. Newton, Assistant Professor of Law</title>
 	<meta charset="utf-8">
-	<!--[if IE]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<![endif]-->
-	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no">
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<title>Samuel P. Newton | Associate Professor of Law, University of Idaho</title>
+	<meta name="description" content="Samuel P. Newton is an Associate Professor of Law at the University of Idaho College of Law, teaching criminal law, criminal procedure, evidence, and the death penalty.">
+	<link rel="shortcut icon" href="favicon.ico">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/themeicon.css">
-	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
-	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
-
 </head>
 
 <body>
-	<!--[if lt IE 9]>
-		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="color-main">upgrade your browser</a> to improve your experience.</div>
-	<![endif]-->
 
 	<div class="preloader">
 		<div class="preloader_image pulse"></div>
 	</div>
 
-	<!-- search modal -->
-<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form" action="/">
-				<div class="form-group">
-					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
-				</div>
-				<button type="submit" class="btn">Search</button>
-			</form>
-		</div>
-	</div>
-
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls p-normal">
-			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-			<!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
-
-		</div>
-	</div><!-- eof .modal -->
-
-	<div class="modal fade popupLogin" id="popupLogin" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content ls border-r-def overflow-visible s-overlay s-mobile-overlay">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h4 class="mb-4">Log in</h4>
-								<form class="form-registration c-mb-40 c-gutter-20" action="/">
-									<div class="row mb-4">
-										<div class="col-sm-12">
-											<div class="form-group">
-												<input type="text" name="name" class="form-control" required placeholder="login" aria-required="true">
-											</div>
-										</div>
-										<div class="col-sm-12">
-											<div class="form-group">
-												<input type="password" name="password" class="form-control" placeholder="password" aria-required="true" required>
-											</div>
-										</div>
-									</div>
-									<a class="registerRedirect " data-dismiss="modal" data-target="#popupRegistr" data-toggle="modal" href="#">Not a member? Register!</a>
-									<button type="submit" class="btn btn-maincolor mt-30 d-block">Sign In</button>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade popupRegistr" id="popupRegistr" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content ls border-r-def overflow-visible s-overlay s-mobile-overlay">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<div class="modal-body">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<h4 class="mb-4">Registration</h4>
-								<form class="form-registration c-mb-40 c-gutter-40" method="post" action="/">
-									<div class="row">
-										<div class="col-12">
-											<div class="form-group">
-												<input type="text" name="name" class="form-control" required placeholder="login" aria-required="true">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="password" name="password" class="form-control" placeholder="password" aria-required="true" required>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="email" name="email" class="form-control" placeholder="email" required aria-required="true">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group">
-												<input type="password" name="confirmPassword" class="form-control" placeholder="password" required aria-required="true">
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="form-group checkbox-group">
-												<input type="checkbox" id="agreed" name="agreed" value="agreed" required aria-required="true"><label for="agreed">I agree to the rules</label>
-											</div>
-										</div>
-									</div>
-									<button type="submit" class="btn btn-maincolor mt-30 d-block">Registration</button>
-								</form>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- wrappers for visual page editor and boxed version of template -->
-<div id="canvas">
-  <div id="box_wrapper">
-
-			<!-- template sections -->
-
-<!--topline section-->
-			<section class="page_topline ds s-py-10 c-my-10">
-				<div class="container-fluid">
-					<div class="row align-items-center">
-						<div class="col-lg-6 text-lg-left text-center d-none d-lg-block">
-							<p><strong class="color-darkgrey"></strong></p>
-						</div>
-						<div class="col-lg-6 text-lg-right text-center">
-
-							<ul class="top-includes border-divided small-text">
-
-							
-
-
-								<li>
-									<span>
-										<a href="#" data-target="#popupRegistr" data-toggle="modal"><i class="fa fa-lock"></i> Register</a>
-									</span>
-								</li>
-
-
-								<li>
-									<span class="social-icons">
-
-										<a href="https://www.facebook.com/" class="fa fa-facebook border-icon rounded-icon" title="facebook"></a>
-										<a href="https://twitter.com/" class="fa fa-twitter border-icon rounded-icon" title="twitter"></a>
-										<a href="https://www.linkedin.com/" class="fa fa-linkedin border-icon rounded-icon" title="linkedin"></a>
-										<a href="https://www.instagram.com/" class="fa fa-instagram border-icon rounded-icon" title="instagram"></a>
-										<a href="https://www.youtube.com/" class="fa fa-youtube-play border-icon rounded-icon" title="youtube"></a>
-
-									</span>
-								</li>
-
-							</ul>
-
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--eof topline-->
+	<div id="canvas">
+		<div id="box_wrapper">
 
 			<section class="page_toplogo ls ms s-py-30">
 				<div class="container-fluid">
 					<div class="row align-items-center">
 						<div class="col-lg-12">
-
-							<div class="d-lg-flex justify-content-lg-end align-items-lg-center">
-								<div class="mr-auto">
-									<!--
-							if you want to display toplogo info on smaller screens
-							than use following CSS classes below:
-						 	d-sm-flex justify-content-sm-center
-						 -->
-									<div class="d-flex justify-content-center justify-content-lg-start">
-										<a href="./" class="logo">
-											<img src="images/logo.png" alt="img">
-										</a>
-									</div>
+							<div class="d-lg-flex justify-content-lg-between align-items-lg-center">
+								<div class="d-flex justify-content-center justify-content-lg-start">
+									<a href="index.html" class="logo">
+										<img src="images/logo.png" alt="Samuel P. Newton">
+									</a>
 								</div>
-								<!--
-						if you want to display toplogo info on smaller screens
-						than use following CSS classes below:
-						d-sm-flex justify-lg-content-end justify-content-sm-between align-items-center
-					-->
 								<div class="d-none d-lg-flex justify-lg-content-end align-items-center">
 									<div class="media">
 										<div class="icon-styled bordered round color-main fs-20">
 											<i class="fa fa-map-marker"></i>
 										</div>
-
 										<div class="media-body">
 											<h4 class="fs-20 mt-0">
-												<strong><a href="https://www.uidaho.edu/law/people/faculty/sam-newton">University of Idaho&nbsp;</a></strong>
+												<strong><a href="https://www.uidaho.edu/people/samnewton">University of Idaho College of Law</a></strong>
 											</h4>
-											<p>
-											  711 S. Rayburn Drive, Moscow, Idaho
-											</p>
-									  </div>
+											<p>875 Perimeter Drive MS 2321, Moscow, Idaho 83844</p>
+										</div>
 									</div>
-
 									<div class="media">
 										<div class="icon-styled bordered round color-main fs-20">
 											<i class="fa fa-phone"></i>
@@ -250,654 +56,91 @@
 											<h4 class="fs-20 mt-0">
 												<strong>(208) 885-7936</strong>
 											</h4>
-											<p>Main Office: (208) 885-2255</p>
-									  </div>
+											<p><a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a></p>
+										</div>
 									</div>
-
-
 								</div>
-
 							</div>
-
-							<!-- header toggler -->
 						</div>
-
 					</div>
 				</div>
 			</section>
 
-			<!-- header with single Bootstrap column only for navigation and includes. Used with topline and toplogo sections. Menu toggler must be in toplogo section -->
 			<header class="page_header ls s-bordertop nav-narrow">
 				<div class="container-fluid">
 					<div class="row align-items-center">
 						<div class="col-xl-12">
-
 							<div class="nav-wrap">
-								<!-- main nav start -->
 								<nav class="top-nav">
 									<ul class="nav sf-menu">
-										<li class="active">
-											<a href="index.html">Home</a>
-											<ul>
-												<li>
-													<a href="index.html">MultiPage</a>
-												</li>
-												<li>
-													<a href="index_singlepage.html">Single Page</a>
-												</li>
-											</ul>
-										</li>
-
-										<!-- Pages -->
-										<li>
-											<a href="author.html">Publications</a>
-											<ul>
-
-												<!-- gallery -->
-												<li>
-													<a href="gallery-image.html">Gallery</a>
-													<ul>
-														<!-- Gallery image only -->
-														<li>
-															<a href="gallery-image.html">Image Only</a>
-															<ul>
-																<li>
-																	<a href="gallery-image-2-cols.html">2 columns</a>
-																</li>
-																<li>
-																	<a href="gallery-image.html">3 columns</a>
-																</li>
-																<li>
-																	<a href="gallery-image-4-cols-fullwidth.html">4 columns fullwidth</a>
-																</li>
-
-															</ul>
-														</li>
-														<!-- eof Gallery image only -->
-
-														<!-- Gallery with title -->
-														<li>
-															<a href="gallery-title.html">Image With Title</a>
-															<ul>
-																<li>
-																	<a href="gallery-title-2-cols.html">2 columns</a>
-																</li>
-																<li>
-																	<a href="gallery-title.html">3 column</a>
-																</li>
-																<li>
-																	<a href="gallery-title-4-cols-fullwidth.html">4 columns fullwidth</a>
-																</li>
-															</ul>
-														</li>
-														<!-- eof Gallery with title -->
-
-														<!-- Gallery with excerpt -->
-														<li>
-															<a href="gallery-excerpt.html">Image with Excerpt</a>
-															<ul>
-																<li>
-																	<a href="gallery-excerpt-2-cols.html">2 columns</a>
-																</li>
-																<li>
-																	<a href="gallery-excerpt.html">3 column</a>
-																</li>
-																<li>
-																	<a href="gallery-excerpt-4-cols-fullwidth.html">4 columns fullwdith</a>
-																</li>
-															</ul>
-														</li>
-														<!-- eof Gallery with excerpt -->
-
-														<li>
-															<a href="gallery-tiled.html">Tiled Gallery</a>
-														</li>
-
-														<!-- Gallery item -->
-														<li>
-															<a href="gallery-single.html">Gallery Item</a>
-															<ul>
-																<li>
-																	<a href="gallery-single.html">Style 1</a>
-																</li>
-																<li>
-																	<a href="gallery-single2.html">Style 2</a>
-																</li>
-															</ul>
-														</li>
-														<!-- eof Gallery item -->
-													</ul>
-												</li>
-												<!-- eof Gallery -->
-
-												<li>
-													<a href="services.html">Our Services</a>
-													<ul>
-														<li>
-															<a href="services.html">Services 1</a>
-														</li>
-														<li>
-															<a href="services2.html">Services 2</a>
-														</li>
-														<li>
-															<a href="service-single.html">Single Service</a>
-														</li>
-														<li>
-															<a href="service-single2.html">Single Service 2</a>
-														</li>
-													</ul>
-												</li>
-
-												<li>
-													<a href="pricing.html">Pricing</a>
-												</li>
-
-												<!-- shop -->
-												<li>
-													<a href="shop-full.html">Shop</a>
-													<ul>
-														<li>
-															<a href="shop-account-dashboard.html">Account</a>
-															<ul>
-
-																<li>
-																	<a href="shop-account-details.html">Account details</a>
-																</li>
-																<li>
-																	<a href="shop-account-addresses.html">Addresses</a>
-																</li>
-																<li>
-																	<a href="shop-account-address-edit.html">Edit Address</a>
-																</li>
-																<li>
-																	<a href="shop-account-orders.html">Orders</a>
-																</li>
-																<li>
-																	<a href="shop-account-order-single.html">Single Order</a>
-																</li>
-																<li>
-																	<a href="shop-account-downloads.html">Downloads</a>
-																</li>
-																<li>
-																	<a href="shop-account-password-reset.html">Password Reset</a>
-																</li>
-																<li>
-																	<a href="shop-account-login.html">Login/Logout</a>
-																</li>
-
-															</ul>
-														</li>
-														<li>
-															<a href="shop-right.html">Right Sidebar</a>
-														</li>
-														<li>
-															<a href="shop-left.html">Left Sidebar</a>
-														</li>
-														<li>
-															<a href="shop-full.html">Shop Full</a>
-														</li>
-														<li>
-															<a href="shop-product-right.html">Product Right Sidebar</a>
-														</li>
-														<li>
-															<a href="shop-product-left.html">Product Left Sidebar</a>
-														</li>
-														<li>
-															<a href="shop-product-full.html">Product Full</a>
-														</li>
-														<li>
-															<a href="shop-cart.html">Cart</a>
-														</li>
-														<li>
-															<a href="shop-checkout.html">Checkout</a>
-														</li>
-														<li>
-															<a href="shop-order-received.html">Order Received</a>
-														</li>
-
-													</ul>
-												</li>
-												<!-- eof shop -->
-
-												<!-- features -->
-												<li>
-													<a href="shortcodes_iconbox.html">Shortcodes</a>
-													<ul>
-														<li>
-															<a href="shortcodes_typography.html">Typography</a>
-														</li>
-														<li>
-															<a href="shortcodes_buttons.html">Buttons</a>
-														</li>
-														<li>
-															<a href="shortcodes_pricing.html">Pricing</a>
-														</li>
-														<li>
-															<a href="shortcodes_iconbox.html">Icon Boxes</a>
-														</li>
-														<li>
-															<a href="shortcodes_progress.html">Progress</a>
-														</li>
-														<li>
-															<a href="shortcodes_tabs.html">Tabs &amp; Collapse</a>
-														</li>
-														<li>
-															<a href="shortcodes_bootstrap.html">Bootstrap Elements</a>
-														</li>
-														<li>
-															<a href="shortcodes_animation.html">Animation</a>
-														</li>
-														<li>
-															<a href="shortcodes_icons.html">Template Icons</a>
-														</li>
-														<li>
-															<a href="shortcodes_socialicons.html">Social Icons</a>
-														</li>
-													</ul>
-												</li>
-												<!-- eof shortcodes -->
-
-												<li>
-													<a href="shortcodes_widgets_default.html">Widgets</a>
-													<ul>
-														<li>
-															<a href="shortcodes_widgets_default.html">Default Widgets</a>
-														</li>
-														<li>
-															<a href="shortcodes_widgets_shop.html">Shop Widgets</a>
-														</li>
-														<li>
-															<a href="shortcodes_widgets_custom.html">Custom Widgets</a>
-														</li>
-													</ul>
-
-												</li>
-
-
-												<!-- events -->
-												<li>
-													<a href="events-left.html">Events</a>
-													<ul>
-														<li>
-															<a href="events-left.html">Left Sidebar</a>
-														</li>
-														<li>
-															<a href="events-right.html">Right Sidebar</a>
-														</li>
-														<li>
-															<a href="events-full.html">Full Width</a>
-														</li>
-														<li>
-															<a href="event-single-left.html">Single Event</a>
-															<ul>
-																<li>
-																	<a href="event-single-left.html">Left Sidebar</a>
-																</li>
-																<li>
-																	<a href="event-single-right.html">Right Sidebar</a>
-																</li>
-																<li>
-																	<a href="event-single-full.html">Full Width</a>
-																</li>
-															</ul>
-														</li>
-													</ul>
-												</li>
-												<!-- eof events -->
-
-												<li>
-													<a href="team.html">Team</a>
-													<ul>
-														<li>
-															<a href="team.html">Team List</a>
-														</li>
-														<li>
-															<a href="team-single.html">Team Member</a>
-														</li>
-													</ul>
-												</li>
-
-
-												<li>
-													<a href="comingsoon.html">Comingsoon</a>
-												</li>
-
-												<li>
-													<a href="faq.html">FAQ</a>
-													<ul>
-														<li>
-															<a href="faq.html">FAQ</a>
-														</li>
-														<li>
-															<a href="faq2.html">FAQ 2</a>
-														</li>
-													</ul>
-												</li>
-												<li>
-													<a href="404.html">404</a>
-												</li>
-
-											</ul>
-										</li>
-										<!-- eof pages -->
-
-										<li>
-											<a href="author.html">About</a>
-										</li>
-
-
-
-										<!-- blog -->
-										<li>
-											<a href="blog-full.html">Blog</a>
-											<ul>
-												<li>
-													<a href="blog-right.html">Right Sidebar</a>
-												</li>
-												<li>
-													<a href="blog-left.html">Left Sidebar</a>
-												</li>
-												<li>
-													<a href="blog-full.html">No Sidebar</a>
-												</li>
-												<li>
-													<a href="blog-grid.html">Blog Grid</a>
-												</li>
-
-												<li>
-													<a href="blog-single-right.html">Post</a>
-													<ul>
-														<li>
-															<a href="blog-single-right.html">Right Sidebar</a>
-														</li>
-														<li>
-															<a href="blog-single-left.html">Left Sidebar</a>
-														</li>
-														<li>
-															<a href="blog-single-full.html">No Sidebar</a>
-														</li>
-													</ul>
-												</li>
-
-												<li>
-													<a href="blog-single-video-right.html">Video Post</a>
-													<ul>
-														<li>
-															<a href="blog-single-video-right.html">Right Sidebar</a>
-														</li>
-														<li>
-															<a href="blog-single-video-left.html">Left Sidebar</a>
-														</li>
-														<li>
-															<a href="blog-single-video-full.html">No Sidebar</a>
-														</li>
-													</ul>
-												</li>
-
-											</ul>
-										</li>
-										<!-- eof blog -->
-
-										<!-- features -->
-										<li>
-											<a href="#">Features</a>
-											<div class="mega-menu">
-												<ul class="mega-menu-row">
-													<li class="mega-menu-col">
-														<a href="#">Headers</a>
-														<ul>
-															<li>
-																<a href="header1.html">Header Type 1</a>
-															</li>
-															<li>
-																<a href="header2.html">Header Type 2</a>
-															</li>
-															<li>
-																<a href="header3.html">Header Type 3</a>
-															</li>
-															<li>
-																<a href="header4.html">Header Type 4</a>
-															</li>
-															<li>
-																<a href="header5.html">Header Type 5</a>
-															</li>
-															<li>
-																<a href="header6.html">Header Type 6</a>
-															</li>
-														</ul>
-													</li>
-													<li class="mega-menu-col">
-														<a href="#">Side Menus</a>
-														<ul>
-															<li>
-																<a href="header-side.html">Push Left</a>
-															</li>
-															<li>
-																<a href="header-side-right.html">Push Right</a>
-															</li>
-															<li>
-																<a href="header-side-slide.html">Slide Left</a>
-															</li>
-															<li>
-																<a href="header-side-slide-right.html">Slide Right</a>
-															</li>
-															<li>
-																<a href="header-side-sticked.html">Sticked Left</a>
-															</li>
-															<li>
-																<a href="header-side-sticked-right.html">Sticked Right</a>
-															</li>
-														</ul>
-													</li>
-													<li class="mega-menu-col">
-														<a href="title1.html">Title Sections</a>
-														<ul>
-															<li>
-																<a href="title1.html">Title section 1</a>
-															</li>
-															<li>
-																<a href="title2.html">Title section 2</a>
-															</li>
-															<li>
-																<a href="title3.html">Title section 3</a>
-															</li>
-															<li>
-																<a href="title4.html">Title section 4</a>
-															</li>
-															<li>
-																<a href="title5.html">Title section 5</a>
-															</li>
-															<li>
-																<a href="title6.html">Title section 6</a>
-															</li>
-														</ul>
-													</li>
-													<li class="mega-menu-col">
-														<a href="footer1.html#footer">Footers</a>
-														<ul>
-															<li>
-																<a href="footer1.html#footer">Footer Type 1</a>
-															</li>
-															<li>
-																<a href="footer2.html#footer">Footer Type 2</a>
-															</li>
-															<li>
-																<a href="footer3.html#footer">Footer Type 3</a>
-															</li>
-															<li>
-																<a href="footer4.html#footer">Footer Type 4</a>
-															</li>
-															<li>
-																<a href="footer5.html#footer">Footer Type 5</a>
-															</li>
-															<li>
-																<a href="footer6.html#footer">Footer Type 6</a>
-															</li>
-														</ul>
-													</li>
-													<li class="mega-menu-col">
-														<a href="copyright1.html#copyright">Copyright</a>
-
-														<ul>
-															<li>
-																<a href="copyright1.html#copyright">Copyright 1</a>
-															</li>
-															<li>
-																<a href="copyright2.html#copyright">Copyright 2</a>
-															</li>
-															<li>
-																<a href="copyright3.html#copyright">Copyright 3</a>
-															</li>
-															<li>
-																<a href="copyright4.html#copyright">Copyright 4</a>
-															</li>
-															<li>
-																<a href="copyright5.html#copyright">Copyright 5</a>
-															</li>
-															<li>
-																<a href="copyright6.html#copyright">Copyright 6</a>
-															</li>
-														</ul>
-													</li>
-
-												</ul>
-											</div> <!-- eof mega menu -->
-										</li>
-										<!-- eof features -->
-
-										<!-- contacts -->
-										<li>
-											<a href="contact.html">Contact</a>
-											<ul>
-												<li>
-													<a href="contact.html">Contact 1</a>
-												</li>
-												<li>
-													<a href="contact2.html">Contact 2</a>
-												</li>
-												<li>
-													<a href="contact3.html">Contact 3</a>
-												</li>
-												<li>
-													<a href="contact4.html">Contact 4</a>
-												</li>
-											</ul>
-										</li>
-										<!-- eof contacts -->
+										<li class="active"><a href="index.html">Home</a></li>
+										<li><a href="author.html">About &amp; CV</a></li>
+										<li><a href="book.html">Books</a></li>
+										<li><a href="writing.html">Writing</a></li>
+										<li><a href="photography.html">Photography</a></li>
+										<li><a href="contact.html">Contact</a></li>
 									</ul>
-
-
 								</nav>
-								<!-- eof main nav -->
-
-
-								<!--modal search-->
-								<span>
-									<a href="#" class="search_modal_button hidden-below-xl">
-										<i class="fa fa-search"></i>
-									</a>
-								</span>
-
 
 								<ul class="top-includes">
-
-
 									<li>
 										<span class="hidden-below-xl">
 											<a href="https://outlook.office365.com/owa/calendar/DrSamuelPNewton@vandalsuidaho.onmicrosoft.com/bookings/" class="btn btn-maincolor">Book an Appointment</a>
 										</span>
 									</li>
-
-
 								</ul>
-
-
 							</div>
-
 						</div>
 					</div>
 				</div>
-
-				<!-- header toggler -->
-
 				<span class="toggle_menu"><span></span></span>
-
 			</header>
 
-
-
-			
-<section id="author" class="ls s-overlay mobile-overlay s-py-90 s-py-xl-150 section-about">
-		<div class="container">
+			<section id="author" class="ls s-overlay mobile-overlay s-py-90 s-py-xl-150 section-about">
+				<div class="container">
 					<div class="row">
-						<div class="col-lg-6">
-							<div class="divider-xl-200"></div>
-							<p class="mb-2 color-dark"></p>
+						<div class="col-lg-8">
+							<div class="divider-xl-100"></div>
 							<h2 class="special-heading">
 								<span>Samuel P. Newton</span>
 							</h2>
 							<div class="divider-40"></div>
 							<p class="excerpt">
-						    Assistant Professor of Law<br>
-						    University of Idaho College of Law&nbsp; &nbsp;&nbsp; </p>
+								Associate Professor of Law<br>
+								University of Idaho College of Law
+							</p>
 							<div class="divider-40"></div>
+							<a href="author.html" class="btn btn-maincolor">About &amp; CV</a>
 							<div class="divider-40"></div>
-							<div class="columns-two">
-							  <a href="shop-product-full.html" class="btn btn-maincolor">Bio / CV&nbsp; &nbsp;&nbsp;</a>
-							  <img src="images/signature.png" alt="img">
-							</div>
-							<div class="divider-xl-150"></div>
+							<img src="images/signature.png" alt="Samuel P. Newton signature">
+							<div class="divider-xl-100"></div>
 						</div>
 					</div>
-	  </div>
-	</section>
+				</div>
+			</section>
 
-<section class="page_slider overflow-visible">
-	  <div class="flexslider">
-			    <ul class="slides">
-			      <li class="cs cover-image text-center text-md-left"> <img src="images/slide01.jpg" alt="img">
-			        <div class="container">
-			          <div class="row">
-			            <div class="col-12">
-			              <div class="intro_layers_wrapper">
-			                <div class="img-layer animate" data-animation="fadeInLeft"> <img src="images/book.png" alt="img"> </div>
-			                <div class="intro_layers">
-			                  <div class="intro_layer intro_feature_word" data-animation="fadeInRight">
-			                    <p>2023</p>
-		                      </div>
-			                  <div class="intro_layer" data-animation="fadeInRight">
-			                    <h1>Coming soon</h1>
-		                      </div>
-			                  <div class="intro_layer" data-animation="fadeInRight">
-			                    <p>Samuel P. Newton, <em>Towering Rock: Joseph Smith and Mormon Resistance in Antebellum America, 1827-1844</em> (Oxford University Press).&nbsp; &nbsp;</p>
-		                      </div>
-			                  <div class="intro_layer several-buttons" data-animation="fadeInUp"> <a href="./chapter.html" class="btn btn-maincolor">Read Chapter 1</a> <a href="#" data-iframe="https://www.youtube.com/embed/YncSOWJ-kRs" data-index="1" class="photoswipe-link photoswipe-link-button"> <span>Dr. Newton Presents</span> </a> </div>
-		                    </div>
-			                <!-- eof .intro_layers -->
-		                  </div>
-			              <!-- eof .intro_layers_wrapper -->
-		                </div>
-			            <!-- eof .col-* -->
-		              </div>
-			          <!-- eof .row -->
-		            </div>
-			        <!-- eof .container-fluid -->
-		          </li>
-		        </ul>
-      </div>
-			  <!-- eof flexslider -->
-    </section>
-<section id="soon" class="ds s-pb-90 s-pt-60 s-py-xl-150 section-counter">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div id="comingsoon-countdown"></div>
-      </div>
-    </div>
-  </div>
-</section>
+			<section class="ls s-py-90 s-py-xl-150">
+				<div class="container">
+					<div class="row align-items-center justify-content-center" style="border-top:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; padding:60px 0;">
+						<div class="col-lg-3 col-6 text-center mb-4 mb-lg-0">
+							<img src="images/book/cover-placeholder.svg" alt="Plows Into Swords cover" class="img-fluid" style="max-width:200px;">
+						</div>
+						<div class="col-lg-6 text-center text-lg-left">
+							<p class="color-main text-uppercase" style="letter-spacing:3px; font-size:13px; font-weight:700;">Forthcoming &middot; Oxford University Press</p>
+							<div class="divider-25"></div>
+							<h2 class="special-heading">
+								<span>Plows Into Swords</span>
+							</h2>
+							<div class="divider-20"></div>
+							<p class="excerpt" style="font-style:italic;">Joseph Smith and Mormon Resistance in Antebellum America, 1805&ndash;1844</p>
+							<div class="divider-35"></div>
+							<a href="book.html" class="btn btn-outline-maincolor">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
-<section id="faqs" class="ls ms s-py-90 s-py-xl-150 c-gutter-50">
+			<section id="publications" class="ls ms s-py-90 s-py-xl-150 c-gutter-50">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -907,221 +150,96 @@
 							<div class="divider-40"></div>
 						</div>
 						<div class="col-lg-6">
-						<h3>Books</h3>
-							<div id="accordion01" role="tablist">
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse01_header">
-										<h5>
-											<a data-toggle="collapse" href="#collapse01" aria-expanded="true" aria-controls="collapse01">
-											Samuel P. Newton, <em>Joseph Smith and Mormon Resistance in Antebellum America, 1827-1844,</em> (Oxford University Press, forthcoming)</a>
-										</h5>
-									</div>
-
-									<div id="collapse01" class="collapse show" role="tabpanel" aria-labelledby="collapse01_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-										  </p>
-											<ul class="list-unstyled">
-												<li>
-													5.1. Introduction to NoSQL
-												</li>
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse02_header">
-										<h5>
-											<a class="collapsed" data-toggle="collapse" href="#collapse02" aria-expanded="true" aria-controls="collapse02">
-											Samuel P. Newton and Teresa L. Welch, <em>Understanding Criminal Evidence: A Case-Method Approach</em> (Wolters-Kluwer, 2012) </a>
-										</h5>
-									</div>
-
-									<div id="collapse02" class="collapse" role="tabpanel" aria-labelledby="collapse02_header" data-parent="#accordion01">
-										<div class="card-body">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-										  </p>
-										</div>
-									</div>
-								</div>
-							</div>
+							<h4 class="special-heading"><span>Books</span></h4>
+							<div class="divider-25"></div>
+							<ul class="list-styled">
+								<li>Samuel P. Newton, <em><a href="book.html">Plows Into Swords: Joseph Smith and Mormon Resistance in Antebellum America, 1805&ndash;1844</a></em> (Oxford University Press, forthcoming)</li>
+								<li>Samuel P. Newton &amp; Teresa L. Welch, <em><a href="https://aspenpublishing.com/products/newton-understandingcriminalevidence" target="_blank" rel="noopener">Understanding Criminal Evidence: A Case-Method Approach</a></em> (Wolters Kluwer, 2012)</li>
+							</ul>
 						</div>
 						<div class="col-lg-6">
-						<h3>Articles</h3>
-							<div id="accordion02" role="tablist">
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse03_header">
-										<h5>
-											<a class="collapsed" data-toggle="collapse" href="#collapse03" aria-expanded="true" aria-controls="collapse03">
-											Samuel P. Newton, “Getting to Know You: An Expanded Approach to Capital Jury Selection,” <em>Tulane Law Review </em> (2021)</a>
-										</h5>
-									</div>
-
-									<div id="collapse03" class="collapse" role="tabpanel" aria-labelledby="collapse03_header" data-parent="#accordion01">
-										<div class="card-body">
-											<ul class="list-unstyled">
-												<li>
-													5.1. Introduction to NoSQL
-												</li>
-												<li>
-													5.2. Case study: What disease is that?
-												</li>
-												<li>
-													5.3. Summary
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse04_header">
-										<h5>
-											<a class="collapsed" data-toggle="collapse" href="#collapse04" aria-expanded="false" aria-controls="collapse04">
-												Samuel P. Newton, “Kidnapping Reconsidered: Courts’ Merger Tests Do Not Remedy the Inequities Which Developed From Kidnapping’s Sensationalized and Racialized History,” <em>William & Mary Bill of Rights Journal</em> (2020)
-											</a>
-										</h5>
-									</div>
-									<div id="collapse04" class="collapse" role="tabpanel" aria-labelledby="collapse04_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse05_header">
-										<h5>
-											<a class="collapsed" data-toggle="collapse" href="#collapse05" aria-expanded="false" aria-controls="collapse05">
-												Samuel P. Newton, “Giving Teeth to State Constitutions: Using History to Argue Utah’s Constitution Affords Greater Protections to Criminal Defendants,” <em>Utah Journal of Criminal Law</em> (2018)
-											</a>
-										</h5>
-									</div>
-									<div id="collapse05" class="collapse" role="tabpanel" aria-labelledby="collapse05_header" data-parent="#accordion02">
-										<div class="card-body">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-											</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="card">
-									<div class="card-header" role="tab" id="collapse06_header">
-										<h5>
-											<a data-toggle="collapse" href="#collapse06" aria-expanded="true" aria-controls="collapse06">
-												Samuel P. Newton, et al., “No Justice in Utah's Justice Courts: Constitutional Issues, Systemic Problems, and the Failure to Protect Defendants in Utah's Infamous Local Courts,” <em>Utah Law Review OnLaw</em> (cited in the <em>Harvard Law Review</em>) and <em>Virginia Law Review</em>
-											</a>
-										</h5>
-									</div>
-									<div id="collapse06" class="collapse show" role="tabpanel" aria-labelledby="collapse06_header" data-parent="#accordion02">
-										<div class="card-body">
-											<ul class="list-unstyled">
-											<li>
-													Cited in the <em>Harvard Law Review</em>
-												</li>
-												<li>
-													Cited in the <em>Virginia Law Review</em>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
+							<h4 class="special-heading"><span>Selected Articles</span></h4>
+							<div class="divider-25"></div>
+							<ul class="list-styled">
+								<li><a href="https://www.tulanelawreview.org/pub/volume96/issue1/getting-to-know-you" target="_blank" rel="noopener">Getting to Know You: An Expanded Approach to Capital Jury Selection</a>, 96 Tulane L. Rev. 131 (2022)</li>
+								<li><a href="https://scholarship.law.wm.edu/wmborj/vol28/iss3/4" target="_blank" rel="noopener">Kidnapping Reconsidered: Courts&rsquo; Merger Tests Do Not Remedy the Inequities Which Developed from Kidnapping&rsquo;s Sensationalized and Racialized History</a>, 28 Wm. &amp; Mary Bill Rts. J. 635 (2020)</li>
+								<li><a href="https://digitalcommons.law.uidaho.edu/faculty_scholarship/316/" target="_blank" rel="noopener">Giving Teeth to State Constitutions: Using History to Argue Utah&rsquo;s Constitution Affords Greater Protections to Criminal Defendants</a>, 3 Utah J. Crim. L. 1 (2018)</li>
+								<li><a href="https://dc.law.utah.edu/onlaw/vol2012/iss1/2/" target="_blank" rel="noopener">No Justice in Utah&rsquo;s Justice Courts: Constitutional Issues, Systemic Problems, and the Failure to Protect Defendants in Utah&rsquo;s Infamous Local Courts</a>, 2012 Utah L. Rev. OnLaw 27 (2012) &mdash; cited by the <em>Harvard Law Review</em> and <em>Virginia Law Review</em></li>
+							</ul>
+						</div>
+						<div class="col-12 text-center">
+							<div class="divider-40"></div>
+							<a href="author.html#cv" class="btn btn-outline-maincolor">About &amp; CV</a>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="mail" class="ls ms s-py-90 s-py-xl-160">
+			<section class="ls s-py-90 s-py-xl-150 c-gutter-50">
 				<div class="container">
 					<div class="row">
-						<div class="col-lg-4">
-							<div class="divider-lg-60"></div>
+						<div class="col-12">
+							<h2 class="special-heading">
+								<span>In the News</span>
+							</h2>
+							<div class="divider-40"></div>
+						</div>
+						<div class="col-lg-6">
+							<h4 class="special-heading"><span>Selected Media</span></h4>
+							<div class="divider-25"></div>
+							<ul class="list-styled">
+								<li><a href="https://www.cnn.com/2026/07/28/us/experts-bryan-kohberger-plea-deal-reversal" target="_blank" rel="noopener">&ldquo;Bryan Kohberger wants out of his plea deal. Here&rsquo;s what experts say about his chances,&rdquo;</a> CNN, July 28, 2026</li>
+								<li><a href="https://www.bbc.com/news/articles/cgewg57rq2ro" target="_blank" rel="noopener">&ldquo;&lsquo;A narcissist&rsquo; &mdash; victim&rsquo;s family blasts Kohberger for challenging Idaho murder conviction,&rdquo;</a> BBC News</li>
+								<li><a href="https://www.washingtonpost.com/nation/2023/05/22/bryan-kohberger-arraignment/" target="_blank" rel="noopener">&ldquo;Judge Enters Not-Guilty Plea for Idaho Stabbing Suspect Kohberger,&rdquo;</a> Washington Post, May 22, 2023</li>
+								<li><a href="https://www.kuer.org/podcast/utah-news-now/2025-03-06/evening-brief-march-6-2025" target="_blank" rel="noopener">&ldquo;Firing squad,&rdquo;</a> Evening Brief, KUER 90.1, March 6, 2025</li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<h4 class="special-heading"><span>Notable Cases</span></h4>
+							<div class="divider-25"></div>
+							<ul class="list-styled">
+								<li><a href="https://law.justia.com/cases/utah/supreme-court/2018/20160952.html" target="_blank" rel="noopener">State v. Wilder</a>, 2018 UT 17, 420 P.3d 1064 &mdash; established the controlling test for whether a kidnapping conviction merges with another offense, overruling prior precedent</li>
+								<li><a href="https://law.justia.com/cases/utah/supreme-court/2018/20150922.html" target="_blank" rel="noopener">State v. Ogden</a>, 2018 UT 8, 416 P.3d 1132 &mdash; clarified that criminal restitution must be limited to losses proximately caused by the defendant&rsquo;s conduct, a matter of first impression</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="mail" class="ls s-py-90 s-py-xl-160">
+				<div class="container">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-lg-5 mb-4 mb-lg-0">
+							<img src="images/contact/moscow.jpg" alt="Moscow, Idaho" class="img-fluid border-r-def">
+						</div>
+						<div class="col-lg-5 text-center">
 							<h2 class="special-heading">
 								<span>Get in touch</span>
 							</h2>
 							<div class="divider-35"></div>
-							<ul class="pl-0">
-								<li class="icon-inline">
+							<ul class="pl-0 list-unstyled">
+								<li class="icon-inline justify-content-center">
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-phone"></i>
 									</div>
 									<p>(208) 885-7936</p>
-								<li class="icon-inline links-grey">
+								</li>
+								<li class="icon-inline justify-content-center">
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-paper-plane-o"></i>
 									</div>
-									<p>
-										<a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a>
-									</p>
+									<p><a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a></p>
 								</li>
-								<li class="icon-inline">
+								<li class="icon-inline justify-content-center">
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-map-marker"></i>
 									</div>
-									<p>875 Perimeter Drive MS 2321<br>
-									Moscow, Idaho 83844</p>
+									<p>875 Perimeter Drive MS 2321, Moscow, Idaho 83844</p>
 								</li>
 							</ul>
 							<div class="divider-35"></div>
-							<p class="social-icons">
-								<a href="https://www.facebook.com/" class="fa border-icon rounded-icon fa-facebook" title="facebook"></a>
-								<a href="https://twitter.com/" class="fa border-icon rounded-icon fa-twitter" title="twitter"></a>
-								<a href="https://www.linkedin.com/" class="fa border-icon rounded-icon fa-linkedin" title="linkedin"></a>
-								<a href="https://www.youtube.com/" class="fa border-icon rounded-icon fa-youtube-play" title="linkedin"></a>
-								<a href="https://www.instagram.com/" class="fa border-icon rounded-icon fa-instagram" title="linkedin"></a>
-							</p>
+							<a href="https://outlook.office365.com/owa/calendar/DrSamuelPNewton@vandalsuidaho.onmicrosoft.com/bookings/" class="btn btn-maincolor">Book an Appointment</a>
 						</div>
-						<div class="col-lg-8">
-							<div class="divider-lg-0 divider-60"></div>
-							<div class="inner-wrap ls p-30 p-xl-70 border-r-def">
-								<form class="contact-form c-mb-50 c-gutter-50" method="post" action="/">
-									<div class="row">
-										<div class="col-sm-6">
-											<div class="form-group has-placeholder">
-												<label for="name">Full Name <span class="required">*</span></label>
-												<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Name">
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="form-group has-placeholder">
-												<label for="email">Email address<span class="required">*</span></label>
-												<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email">
-											</div>
-										</div>
-									</div>
-
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group has-placeholder">
-												<label for="subject">Subject<span class="required">*</span></label>
-												<input type="text" aria-required="true" size="30" value="" name="subject" id="subject" class="form-control" placeholder="Subject">
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-12">
-											<div class="form-group has-placeholder">
-												<label for="message">Your message</label>
-												<textarea aria-required="true" rows="3" cols="45" name="message" id="message" class="form-control" placeholder="Message"></textarea>
-											</div>
-										</div>
-									</div>
-									<div class="wrap-forms">
-										<div class="row">
-											<div class="col-12">
-												<button type="submit" name="contact_submit" class="btn btn-maincolor">Send a message</button>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-						<!--.col-* -->
 					</div>
 				</div>
 			</section>
@@ -1129,34 +247,24 @@
 			<footer class="page_footer ds s-py-85 s-py-xl-155">
 				<div class="container">
 					<div class="row">
-
 						<div class="col-12 text-center animate" data-animation="fadeInUp">
-							<a href="./" class="logo justify-content-center">
-							<img src="images/logo-dark.png" alt="img">
+							<a href="index.html" class="logo justify-content-center">
+								<img src="images/logo.png" alt="Samuel P. Newton" style="max-width:60px;">
 							</a>
+							<div class="divider-25"></div>
+							<p>Samuel P. Newton &mdash; Associate Professor of Law</p>
 							<div class="divider-40"></div>
 							<div class="widget widget_nav_menu nav-in-line">
 								<ul class="menu">
-									<li class="menu-item">
-										<a href="index.html">Home</a>
-									</li>
-									<li class="menu-item">
-										<a href="author.html">CV / Bio</a>
-									</li>
-									<li class="menu-item">
-										<a href="chapter.html">Chapter</a>
-									</li>
-									<li class="menu-item">
-										<a href="blog-full.html">Blog</a>
-									</li>
-									
-									<li class="menu-item">
-										<a href="contact.html">Contacts</a>
-									</li>
+									<li class="menu-item"><a href="index.html">Home</a></li>
+									<li class="menu-item"><a href="author.html">About &amp; CV</a></li>
+									<li class="menu-item"><a href="book.html">Books</a></li>
+									<li class="menu-item"><a href="writing.html">Writing</a></li>
+									<li class="menu-item"><a href="photography.html">Photography</a></li>
+									<li class="menu-item"><a href="contact.html">Contact</a></li>
 								</ul>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</footer>
@@ -1165,21 +273,18 @@
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-md-12 text-center color-dark">
-							<p>&copy; Copyright <span class="copyright_year">2023</span> All Rights Reserved</p>
+							<p>&copy; <span id="copyright_year">2026</span> Samuel P. Newton. All Rights Reserved.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
-
-  </div>
-<!-- eof #box_wrapper -->
-</div><!-- eof #canvas -->
-
+		</div>
+	</div>
 
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
-
+	<script>document.getElementById('copyright_year').textContent = new Date().getFullYear();</script>
 
 </body>
 

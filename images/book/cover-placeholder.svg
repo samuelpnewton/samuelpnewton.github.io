@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600">
+	<rect width="400" height="600" fill="#faf8f4"/>
+	<rect x="10" y="10" width="380" height="580" fill="none" stroke="#c43140" stroke-width="3"/>
+	<rect x="24" y="24" width="352" height="552" fill="none" stroke="#c43140" stroke-width="1"/>
+	<text x="200" y="270" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#031521">Plows</text>
+	<text x="200" y="310" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#031521">Into Swords</text>
+	<line x1="160" y1="335" x2="240" y2="335" stroke="#c43140" stroke-width="2"/>
+	<text x="200" y="365" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#6e7a81">Samuel P. Newton</text>
+	<text x="200" y="560" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="12" letter-spacing="2" fill="#c43140">OXFORD UNIVERSITY PRESS</text>
+</svg>

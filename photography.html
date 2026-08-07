@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="format-detection" content="telephone=no">
-	<title>Contact | Samuel P. Newton</title>
-	<meta name="description" content="Contact Samuel P. Newton, Associate Professor of Law at the University of Idaho College of Law.">
+	<title>Photography | Samuel P. Newton</title>
+	<meta name="description" content="A selection of photographs by Samuel P. Newton.">
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -77,8 +77,8 @@
 										<li><a href="author.html">About &amp; CV</a></li>
 										<li><a href="book.html">Books</a></li>
 										<li><a href="writing.html">Writing</a></li>
-										<li><a href="photography.html">Photography</a></li>
-										<li class="active"><a href="contact.html">Contact</a></li>
+										<li class="active"><a href="photography.html">Photography</a></li>
+										<li><a href="contact.html">Contact</a></li>
 									</ul>
 								</nav>
 
@@ -100,53 +100,55 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center">
-							<h1 class="small-title">Contact</h1>
+							<h1 class="small-title">Photography</h1>
 							<ol class="breadcrumb">
 								<li class="breadcrumb-item"><a href="index.html">Home</a></li>
-								<li class="breadcrumb-item active">Contact</li>
+								<li class="breadcrumb-item active">Photography</li>
 							</ol>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="ls s-py-90 s-py-xl-160">
+			<section class="ls ms s-py-90 s-py-xl-150">
 				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-6 mb-4 mb-lg-0">
-							<img src="images/contact/moscow.jpg" alt="Moscow, Idaho" class="img-fluid border-r-def">
+					<div class="row">
+						<div class="col-12 text-center">
+							<h3 class="special-heading"><span>A Few Favorites</span></h3>
+							<div class="divider-40"></div>
 						</div>
-						<div class="col-lg-6 text-center animate" data-animation="scaleAppear">
-							<h2 class="special-heading">
-								<span>Get in touch</span>
-							</h2>
-							<div class="divider-35"></div>
-							<ul class="pl-0 list-unstyled">
-								<li class="icon-inline justify-content-center">
-									<div class="icon-styled color-main fs-16">
-										<i class="fa fa-map-marker"></i>
-									</div>
-									<p>University of Idaho College of Law<br>875 Perimeter Drive MS 2321<br>Moscow, Idaho 83844</p>
-								</li>
-								<li class="icon-inline justify-content-center">
-									<div class="icon-styled color-main fs-16">
-										<i class="fa fa-phone"></i>
-									</div>
-									<p>(208) 885-7936</p>
-								</li>
-								<li class="icon-inline justify-content-center">
-									<div class="icon-styled color-main fs-16">
-										<i class="fa fa-paper-plane-o"></i>
-									</div>
-									<p><a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a></p>
-								</li>
-							</ul>
-							<div class="divider-35"></div>
-							<a href="https://outlook.office365.com/owa/calendar/DrSamuelPNewton@vandalsuidaho.onmicrosoft.com/bookings/" class="btn btn-maincolor">Book an Appointment</a>
+					</div>
+					<div class="row c-gutter-30" id="photo-grid">
+						<div class="col-12 text-center" id="photo-grid-empty">
+							<p class="color-dark">Photos coming soon.</p>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			<script>
+				(function () {
+					fetch('images/photography/manifest.json', { cache: 'no-store' })
+						.then(function (r) { return r.ok ? r.json() : []; })
+						.then(function (photos) {
+							if (!photos || !photos.length) return;
+							var grid = document.getElementById('photo-grid');
+							grid.innerHTML = '';
+							photos.forEach(function (p) {
+								var col = document.createElement('div');
+								col.className = 'col-md-4 mb-4';
+								var img = document.createElement('img');
+								img.src = 'images/photography/' + p.file;
+								img.alt = p.alt || 'Photograph';
+								img.className = 'img-fluid border-r-def';
+								img.loading = 'lazy';
+								col.appendChild(img);
+								grid.appendChild(col);
+							});
+						})
+						.catch(function () { /* leave "coming soon" message in place */ });
+				})();
+			</script>
 
 			<footer class="page_footer ds s-py-85 s-py-xl-155">
 				<div class="container">
