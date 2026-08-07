@@ -54,7 +54,7 @@
 										</div>
 										<div class="media-body">
 											<h4 class="fs-20 mt-0">
-												<strong>(208) 885-7936</strong>
+												<strong><a href="tel:+12088857936">(208) 885-7936</a></strong>
 											</h4>
 											<p><a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a></p>
 										</div>
@@ -160,7 +160,7 @@
 								if (post.date) {
 									var date = document.createElement('span');
 									date.className = 'color-dark';
-									date.textContent = ' — ' + new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+									date.textContent = ' — ' + new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 									li.appendChild(date);
 								}
 								if (post.summary) {

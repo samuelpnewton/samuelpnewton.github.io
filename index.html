@@ -36,15 +36,35 @@
 			height: auto;
 			object-fit: contain;
 		}
+		/* BBC's mark and USA Today's wordmark both sit small/letterboxed inside their source
+		   files at the default chip height - size them up so they read at a glance */
+		.media-logo-chip img[alt="BBC News"],
+		.media-logo-chip img[alt="USA Today"] {
+			max-height: 42px;
+			max-width: 190px;
+		}
 		/* theme only hides the photo overlay at desktop (>=992px); hide it always so the portrait shows on mobile too */
 		#author.s-overlay:before {
 			display: none;
+		}
+		/* single fluid rule (no hard breakpoint) so the hero never collapses to a sliver at
+		   in-between effective widths (narrow windows, browser zoom, larger system font size) */
+		#author.section-about {
+			min-height: clamp(420px, 45vw, 720px);
 		}
 		/* theme also forces background-position:left on mobile, cropping the face out of frame;
 		   65% keeps the subject's face right-of-center, clear of the left-aligned text/button */
 		@media (max-width: 991px) {
 			#author.section-about {
 				background-position: 65% center;
+			}
+			/* keep the overlaid heading/button confined to the left of the frame so they
+			   never sit on top of the face, regardless of how large the photo renders */
+			.hero-text-box {
+				background: rgba(244, 242, 236, .94);
+				padding: 20px 22px;
+				border-radius: 4px;
+				max-width: 62%;
 			}
 		}
 	</style>
@@ -87,7 +107,7 @@
 										</div>
 										<div class="media-body">
 											<h4 class="fs-20 mt-0">
-												<strong>(208) 885-7936</strong>
+												<strong><a href="tel:+12088857936">(208) 885-7936</a></strong>
 											</h4>
 											<p><a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a></p>
 										</div>
@@ -134,16 +154,18 @@
 					<div class="row">
 						<div class="col-lg-6 offset-lg-2">
 							<div class="divider-xl-40"></div>
-							<h2 class="special-heading">
-								<span>Samuel P. Newton</span>
-							</h2>
-							<div class="divider-40"></div>
-							<p class="excerpt">
-								Associate Professor of Law<br>
-								University of Idaho College of Law
-							</p>
-							<div class="divider-40"></div>
-							<a href="author.html" class="btn btn-maincolor">About &amp; CV</a>
+							<div class="hero-text-box">
+								<h2 class="special-heading">
+									<span>Samuel P. Newton</span>
+								</h2>
+								<div class="divider-40"></div>
+								<p class="excerpt">
+									Associate Professor of Law<br>
+									University of Idaho College of Law
+								</p>
+								<div class="divider-40"></div>
+								<a href="author.html" class="btn btn-maincolor">About &amp; CV</a>
+							</div>
 							<div class="divider-xl-40"></div>
 						</div>
 					</div>
@@ -268,7 +290,7 @@
 									<div class="icon-styled color-main fs-16">
 										<i class="fa fa-phone"></i>
 									</div>
-									<p>(208) 885-7936</p>
+									<p><a href="tel:+12088857936">(208) 885-7936</a></p>
 								</li>
 								<li class="icon-inline justify-content-center">
 									<div class="icon-styled color-main fs-16">

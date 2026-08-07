@@ -938,6 +938,8 @@ ul.list-styled {
 ul.list-styled li {
 	color: #062637;
 	padding: 2px 0;
+	padding-left: 40px;
+	text-indent: -40px;
 	position: relative;
 }
 
@@ -19359,6 +19361,20 @@ a img.aligncenter {
 	.page_header.mobile-active {
 		opacity: 1;
 		z-index: 1003;
+	}
+	/* the JS affix plugin computes its scroll threshold once on load and can drift out of
+	   sync with the mobile browser's collapsing address bar, making the nav flicker in and
+	   out as you scroll. CSS position:sticky pins it without any JS/scroll-math involved,
+	   and (unlike position:fixed) still respects its normal place in the page below the
+	   contact bar, so there's no jump/gap when it first locks to the top. Sticking on the
+	   JS-inserted wrapper (not the header itself) matters: the wrapper's own height is set
+	   equal to the header's, so if the header were sticky inside it there'd be zero room to
+	   stick; the wrapper's true parent spans the whole page, giving it room to stay stuck. */
+	.page_header_wrapper {
+		position: -webkit-sticky !important;
+		position: sticky !important;
+		top: 0;
+		z-index: 1001;
 	}
 }
 

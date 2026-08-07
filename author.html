@@ -26,8 +26,10 @@
 				background-position: 65% center;
 			}
 		}
-		#about-hero {
-			min-height: 480px;
+		/* single fluid rule (no hard breakpoint) so the hero never collapses to a sliver at
+		   in-between effective widths (narrow windows, browser zoom, larger system font size) */
+		#about-hero.section-about {
+			min-height: clamp(420px, 45vw, 720px);
 		}
 	</style>
 </head>
@@ -69,7 +71,7 @@
 										</div>
 										<div class="media-body">
 											<h4 class="fs-20 mt-0">
-												<strong>(208) 885-7936</strong>
+												<strong><a href="tel:+12088857936">(208) 885-7936</a></strong>
 											</h4>
 											<p><a href="mailto:samnewton@uidaho.edu">samnewton@uidaho.edu</a></p>
 										</div>
@@ -132,20 +134,29 @@
 					<div class="row">
 						<div class="col-xl-8 offset-xl-2">
 							<h3 class="special-heading">
-								<span>About me</span>
+								<span>About</span>
 							</h3>
 							<div class="divider-40"></div>
 							<p>
-								Samuel P. Newton is an Associate Professor of Law at the University of Idaho College of Law, where he teaches criminal law, criminal procedure, and evidence. Before moving into academia full-time, he spent roughly two decades as a criminal defense attorney in Utah and Montana, including extensive work on capital cases, and his defense practice included securing the exoneration of a client wrongfully convicted of murder.
+								Samuel P. Newton is an Associate Professor of Law at the University of Idaho College of Law, where he teaches criminal law, criminal procedure, and evidence. Before entering academia full-time, he spent nearly two decades as a criminal defense attorney in Utah and Montana, including extensive work on high-stakes capital cases. His defense practice notably secured the exoneration of a client wrongfully convicted of murder.
 							</p>
 							<p>
-								He holds a JD from Brigham Young University and a PhD in History from the University of Utah (summa cum laude). His scholarship spans criminal law and procedure, peace and resistance studies, civil disobedience, and legal history, including his forthcoming book, <em><a href="book.html">Plows Into Swords: Joseph Smith and Mormon Resistance in Antebellum America, 1805&ndash;1844</a></em>, from Oxford University Press.
+								He holds a JD from Brigham Young University and a PhD in History from the University of Utah (summa cum laude). His scholarship spans criminal law and procedure, peace and resistance studies, civil disobedience, and legal history, including his forthcoming book, <em><a href="book.html">Plows Into Swords: Joseph Smith and Mormon Resistance in Antebellum America, 1805&ndash;1844</a></em> (Oxford University Press).
 							</p>
 							<p>
-								Newton has been recognized repeatedly by the University of Idaho for teaching, mentorship, research, and professionalism, and serves as the College of Law&rsquo;s faculty advisor to OUTLaw, its LGBTQ+ student organization. Above all, he loves his students and genuinely cares about them.
+								Newton has been recognized repeatedly by the University of Idaho for excellence in teaching, mentorship, research, and professionalism. He serves as the College of Law&rsquo;s faculty advisor to OUTLaw, the school&rsquo;s LGBTQ+ student organization, and remains deeply dedicated to supporting and mentoring his students.
 							</p>
 							<p>
-								Outside the law school, Newton is as likely to be found on a river as behind a desk. A former whitewater guide and lifelong backpacker and skier, he has also built a barn by hand, restored furniture, and can generally be talked into fixing whatever just broke around the house. He plays trombone, piano, and guitar, reads widely across law, history, philosophy, and spirituality, and has spent time learning from indigenous healing traditions. He is the father of three, including through foster care and adoption, plus a much longer list of former students and honorary kids he has taken in over the years.
+								Outside the classroom, Newton&rsquo;s pursuits are as varied as his background. A former whitewater guide, scout camp veteran, and lifelong telemark skier, he is as comfortable navigating river rapids or multi-day backpacking trips as he is analyzing legal precedent. A skilled craftsman and musician, he has hand-built a two-story barn, restored antique furniture, and plays piano, guitar, and trombone. His background spans everything from classical performance in the Utah Youth Symphony to competitive gymnastics and community emergency response.
+							</p>
+							<p>
+								Newton is the father of five children&mdash;including through adoption&mdash;and a former foster parent who has opened his home to dozens of young people and students over the years. Guided by a deep commitment to mentorship, human connection, and service, he remains dedicated to advocating for marginalized communities both inside and outside the legal system.
+							</p>
+							<div class="divider-25"></div>
+							<p>
+								<a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2992867" target="_blank" rel="noopener">SSRN Author Page</a>
+								&nbsp;&middot;&nbsp;
+								<a href="https://www.uidaho.edu/law/people/faculty/sam-newton" target="_blank" rel="noopener">Faculty Profile</a>
 							</p>
 
 							<div class="divider-xl-30 divider-40"></div>
