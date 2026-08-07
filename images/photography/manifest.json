@@ -1,7 +1,25 @@
 [
   {
+    "file": "Delicate Arch, Utah.png",
+    "alt": "Delicate Arch, Utah",
+    "w": 1792,
+    "h": 2390
+  },
+  {
+    "file": "Dingle Peninsula, Ireland.png",
+    "alt": "Dingle Peninsula, Ireland",
+    "w": 1536,
+    "h": 1024
+  },
+  {
     "file": "Dolomites, Italy.jpeg",
     "alt": "Dolomites, Italy",
+    "w": 896,
+    "h": 1195
+  },
+  {
+    "file": "Florence, Italy.PNG",
+    "alt": "Florence, Italy",
     "w": 896,
     "h": 1195
   },
@@ -12,33 +30,63 @@
     "h": 1129
   },
   {
-    "file": "Img-1140.jpeg",
-    "alt": "Img-1140",
-    "w": 1372,
-    "h": 784
-  },
-  {
-    "file": "Just above Taisten-Tesido, Italy.jpeg",
-    "alt": "Just above Taisten-Tesido, Italy",
-    "w": 5712,
-    "h": 4284
-  },
-  {
     "file": "Le Nomade, Antibes, France.PNG",
     "alt": "Le Nomade, Antibes, France",
     "w": 896,
     "h": 1195
   },
   {
-    "file": "Riomaggiore, Cinque Terre, Italy.jpeg",
-    "alt": "Riomaggiore, Cinque Terre, Italy",
+    "file": "Muir Woods 01, California.png",
+    "alt": "Muir Woods 01, California",
+    "w": 2390,
+    "h": 1792
+  },
+  {
+    "file": "Muir Woods 02, California.jpeg",
+    "alt": "Muir Woods 02, California",
     "w": 896,
-    "h": 1195
+    "h": 1193
+  },
+  {
+    "file": "Narrows, Zion National Park, Utah.png",
+    "alt": "Narrows, Zion National Park, Utah",
+    "w": 1536,
+    "h": 1024
+  },
+  {
+    "file": "Riomaggiore, Cinque Terre, Italy.png",
+    "alt": "Riomaggiore, Cinque Terre, Italy",
+    "w": 1792,
+    "h": 2390
+  },
+  {
+    "file": "St Ignatius, Montana.png",
+    "alt": "St Ignatius, Montana",
+    "w": 2390,
+    "h": 1792
+  },
+  {
+    "file": "Taisten:Tesido, Italy.png",
+    "alt": "Taisten:Tesido, Italy",
+    "w": 2390,
+    "h": 1792
   },
   {
     "file": "Watercolor, Antibes, France.jpeg",
     "alt": "Watercolor, Antibes, France",
     "w": 714,
     "h": 950
+  },
+  {
+    "file": "Watercolor, Basho.png",
+    "alt": "Watercolor, Basho",
+    "w": 1536,
+    "h": 1024
+  },
+  {
+    "file": "Watercolor, Florence, Italy.jpeg",
+    "alt": "Watercolor, Florence, Italy",
+    "w": 1372,
+    "h": 784
   }
 ]
