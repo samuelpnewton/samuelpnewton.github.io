@@ -1,5 +1,17 @@
 [
   {
+    "file": "Big Mountain Panorama, Whitefish, Montana.png",
+    "alt": "Big Mountain Panorama, Whitefish, Montana",
+    "w": 3200,
+    "h": 1338
+  },
+  {
+    "file": "Big Mountain, Whitefish, Montana.png",
+    "alt": "Big Mountain, Whitefish, Montana",
+    "w": 2293,
+    "h": 1719
+  },
+  {
     "file": "Buddha statute, Bodh Gaya, India.png",
     "alt": "Buddha statute, Bodh Gaya, India",
     "w": 2390,
@@ -42,6 +54,12 @@
     "h": 1195
   },
   {
+    "file": "East Glacier National Park.png",
+    "alt": "East Glacier National Park",
+    "w": 2432,
+    "h": 1748
+  },
+  {
     "file": "Fairy Pools, Isle of Skye, Scotland.png",
     "alt": "Fairy Pools, Isle of Skye, Scotland",
     "w": 2390,
@@ -76,6 +94,12 @@
     "alt": "Le Nomade, Antibes, France",
     "w": 896,
     "h": 1195
+  },
+  {
+    "file": "Mountain goat, Glacier National Park, Montana.png",
+    "alt": "Mountain goat, Glacier National Park, Montana",
+    "w": 2390,
+    "h": 1792
   },
   {
     "file": "Muir Woods 01, California.png",
