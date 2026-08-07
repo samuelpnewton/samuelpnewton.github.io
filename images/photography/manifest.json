@@ -54,8 +54,20 @@
     "h": 1024
   },
   {
+    "file": "Riomaggiore, Cinque Terre, Italy.png",
+    "alt": "Riomaggiore, Cinque Terre, Italy",
+    "w": 1792,
+    "h": 2390
+  },
+  {
     "file": "St Ignatius, Montana.png",
     "alt": "St Ignatius, Montana",
+    "w": 2390,
+    "h": 1792
+  },
+  {
+    "file": "Taisten:Tesido, Italy.png",
+    "alt": "Taisten:Tesido, Italy",
     "w": 2390,
     "h": 1792
   },
