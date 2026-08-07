@@ -223,7 +223,27 @@
 								history: false,
 								shareEl: false
 							});
+
+							function positionCaption() {
+								var item = gallery.currItem;
+								var caption = pswpElement.querySelector('.pswp__caption');
+								if (!item || !caption || !item.w || !item.h) return;
+								var vw = window.innerWidth;
+								var vh = window.innerHeight;
+								var fitRatio = Math.min(vw / item.w, vh / item.h);
+								var renderedH = item.h * fitRatio;
+								var top = (vh - renderedH) / 2 + renderedH + 12;
+								top = Math.min(top, vh - 60);
+								caption.style.bottom = 'auto';
+								caption.style.top = top + 'px';
+							}
+
+							gallery.listen('afterChange', positionCaption);
+							gallery.listen('resize', positionCaption);
+							gallery.listen('initialZoomInEnd', positionCaption);
+
 							gallery.init();
+							positionCaption();
 						});
 					}
 				})();

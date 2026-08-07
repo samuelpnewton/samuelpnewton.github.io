@@ -25,10 +25,21 @@ jobs:
           exts = (".jpg", ".jpeg", ".png", ".webp", ".gif")
           skip = {"manifest.json", "placeholder.svg"}
 
+          SMALL_WORDS = {"a", "an", "the", "of", "in", "on", "at", "to", "up",
+                         "and", "or", "for", "with", "from", "into", "near", "above", "below"}
+
           def to_alt(filename):
               name = os.path.splitext(filename)[0]
-              name = re.sub(r'[-_]+', ' ', name).strip()
-              return name.title() if name else "Photograph"
+              words = re.sub(r'[-_]+', ' ', name).strip().split(' ')
+              if not words or not words[0]:
+                  return "Photograph"
+              out = []
+              for i, w in enumerate(words):
+                  if i > 0 and w.lower() in SMALL_WORDS:
+                      out.append(w.lower())
+                  else:
+                      out.append(w[:1].upper() + w[1:] if w else w)
+              return ' '.join(out)
 
           def get_size(path):
               """Return (width, height) for JPEG/PNG/GIF, or None if undetermined."""
@@ -66,24 +77,15 @@ jobs:
               if f.lower().endswith(exts) and f not in skip
           )
 
-          # preserve any hand-edited captions from the existing manifest
-          existing = {}
+          # caption is always derived from the filename - rename the file to caption it
           manifest_path = os.path.join(folder, "manifest.json")
-          if os.path.exists(manifest_path):
-              try:
-                  with open(manifest_path) as fh:
-                      for item in json.load(fh):
-                          existing[item.get("file")] = item
-              except Exception as e:
-                  print("could not read existing manifest:", e)
 
           manifest = []
           for f in files:
-              prev = existing.get(f, {})
               size = get_size(os.path.join(folder, f))
               entry = {
                   "file": f,
-                  "alt": prev.get("alt") or to_alt(f),
+                  "alt": to_alt(f),
               }
               if size:
                   entry["w"], entry["h"] = size
