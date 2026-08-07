@@ -938,14 +938,7 @@ ul.list-styled {
 ul.list-styled li {
 	color: #062637;
 	padding: 2px 0;
-	padding-left: 60px;
-	text-indent: -60px;
 	position: relative;
-}
-
-.list-styled ul li em,
-ul.list-styled li em {
-	font-weight: 600;
 }
 
 .list-styled ul li:before,
@@ -22453,6 +22446,14 @@ img.absolute_image {
 @media (min-width: 1930px) {
 	.section-about {
 		background-size: contain;
+	}
+	/* our full-bleed hero portraits must stay cover at any width - "contain" here is what
+	   was causing the photo to letterbox and stop spanning the page (visible whenever the
+	   effective CSS viewport crosses 1930px, e.g. when a user zooms out / uses smaller
+	   system text, which makes more CSS px fit in the same window) */
+	#author.section-about,
+	#about-hero.section-about {
+		background-size: cover;
 	}
 }
 

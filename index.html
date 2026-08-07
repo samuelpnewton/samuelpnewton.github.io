@@ -37,11 +37,17 @@
 			object-fit: contain;
 		}
 		/* BBC's mark and USA Today's wordmark both sit small/letterboxed inside their source
-		   files at the default chip height - size them up so they read at a glance */
+		   files at the default chip height - size the chip and image up together so they
+		   read at a glance instead of being clipped by the fixed chip height */
+		.media-logo-chip:has(img[alt="BBC News"]),
+		.media-logo-chip:has(img[alt="USA Today"]) {
+			height: 72px;
+			padding: 10px 20px;
+		}
 		.media-logo-chip img[alt="BBC News"],
 		.media-logo-chip img[alt="USA Today"] {
-			max-height: 42px;
-			max-width: 190px;
+			max-height: 52px;
+			max-width: 220px;
 		}
 		/* theme only hides the photo overlay at desktop (>=992px); hide it always so the portrait shows on mobile too */
 		#author.s-overlay:before {
@@ -61,10 +67,13 @@
 			/* keep the overlaid heading/button confined to the left of the frame so they
 			   never sit on top of the face, regardless of how large the photo renders */
 			.hero-text-box {
-				background: rgba(244, 242, 236, .94);
-				padding: 20px 22px;
-				border-radius: 4px;
-				max-width: 62%;
+				max-width: 30%;
+			}
+			/* theme forces word-break:break-word on all headings (h1-h6), which at this
+			   narrow width splits "Samuel" mid-word - override so it wraps by whole word */
+			.hero-text-box h2 {
+				word-break: normal;
+				overflow-wrap: normal;
 			}
 		}
 	</style>
@@ -163,9 +172,9 @@
 									Associate Professor of Law<br>
 									University of Idaho College of Law
 								</p>
-								<div class="divider-40"></div>
-								<a href="author.html" class="btn btn-maincolor">About &amp; CV</a>
 							</div>
+							<div class="divider-40"></div>
+							<a href="author.html" class="btn btn-maincolor">About &amp; CV</a>
 							<div class="divider-xl-40"></div>
 						</div>
 					</div>
