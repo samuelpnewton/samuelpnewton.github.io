@@ -20,6 +20,32 @@
 		#news-section .list-styled li strong {
 			color: rgba(255, 255, 255, .75);
 		}
+		.media-logo-chip {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #fff;
+			border-radius: 6px;
+			padding: 10px 16px;
+			height: 52px;
+		}
+		.media-logo-chip img {
+			max-height: 28px;
+			max-width: 140px;
+			width: auto;
+			height: auto;
+			object-fit: contain;
+		}
+		/* theme only hides the photo overlay at desktop (>=992px); hide it always so the portrait shows on mobile too */
+		#author.s-overlay:before {
+			display: none;
+		}
+		/* theme also forces background-position:left on mobile, cropping the face out of frame */
+		@media (max-width: 991px) {
+			#author.section-about {
+				background-position: center right;
+			}
+		}
 	</style>
 </head>
 
@@ -102,7 +128,7 @@
 				<span class="toggle_menu"><span></span></span>
 			</header>
 
-			<section id="author" class="ls s-overlay mobile-overlay s-py-90 s-py-xl-60 section-about">
+			<section id="author" class="ls s-overlay s-py-90 s-py-xl-60 section-about">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 offset-lg-2">
@@ -201,13 +227,13 @@
 							<div class="divider-35"></div>
 							<p class="text-uppercase" style="letter-spacing:2px; font-size:12px; opacity:.6;">As featured in</p>
 							<div class="divider-20"></div>
-							<div class="d-flex flex-wrap justify-content-center align-items-center" style="gap:28px 44px;">
-								<span style="font-family:Georgia,'Times New Roman',serif; font-size:24px; font-weight:700; letter-spacing:.5px;">CNN</span>
-								<span style="font-family:Georgia,'Times New Roman',serif; font-size:20px; font-weight:700; letter-spacing:1px;">BBC NEWS</span>
-								<span style="font-family:Georgia,'Times New Roman',serif; font-size:19px; font-style:italic;">The Washington Post</span>
-								<span style="font-family:Georgia,'Times New Roman',serif; font-size:18px; font-weight:700;">The Seattle Times</span>
-								<span style="font-family:Helvetica,Arial,sans-serif; font-size:17px; font-weight:700; letter-spacing:.5px;">USA TODAY</span>
-								<span style="font-family:Helvetica,Arial,sans-serif; font-size:17px; font-weight:700; letter-spacing:1px;">KUER 90.1</span>
+							<div class="d-flex flex-wrap justify-content-center align-items-center" style="gap:18px 22px;">
+								<span class="media-logo-chip"><img src="images/media-logos/CNN.svg" alt="CNN"></span>
+								<span class="media-logo-chip"><img src="images/media-logos/bbc-2-logo-black-and-white.png" alt="BBC News"></span>
+								<span class="media-logo-chip"><img src="images/media-logos/The_Logo_of_The_Washington_Post_Newspaper.svg" alt="The Washington Post"></span>
+								<span class="media-logo-chip"><img src="images/media-logos/The_Seattle_Times_logo.svg" alt="The Seattle Times"></span>
+								<span class="media-logo-chip"><img src="images/media-logos/USA-Today-logo.png" alt="USA Today"></span>
+								<span class="media-logo-chip"><img src="images/media-logos/250530-kuer65-logo-horizontal-color.png" alt="KUER 90.1"></span>
 							</div>
 							<div class="divider-50"></div>
 						</div>

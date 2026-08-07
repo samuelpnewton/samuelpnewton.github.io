@@ -15,6 +15,18 @@
 	<link rel="stylesheet" href="css/themeicon.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<style>
+		/* theme only hides the photo overlay at desktop (>=992px); hide it always so the portrait shows on mobile too */
+		#about-hero.s-overlay:before {
+			display: none;
+		}
+		/* theme also forces background-position:left on mobile, cropping the face out of frame */
+		@media (max-width: 991px) {
+			#about-hero.section-about {
+				background-position: center right;
+			}
+		}
+	</style>
 </head>
 
 <body>
@@ -110,7 +122,7 @@
 				</div>
 			</section>
 
-			<section class="ls s-overlay mobile-overlay s-py-90 s-py-xl-60 section-about">
+			<section id="about-hero" class="ls s-overlay s-py-90 s-py-xl-60 section-about">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-6 offset-lg-2">

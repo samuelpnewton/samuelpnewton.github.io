@@ -159,14 +159,15 @@
 							var grid = document.getElementById('art-grid');
 							grid.innerHTML = '';
 							photos.forEach(function (p) {
+								var url = 'images/photography/' + encodeURIComponent(p.file);
 								var a = document.createElement('a');
-								a.href = 'images/photography/' + p.file;
+								a.href = url;
 								a.className = 'art-link';
 								a.setAttribute('data-width', p.w || 1600);
 								a.setAttribute('data-height', p.h || 1600);
 								a.setAttribute('data-caption', p.alt || '');
 								var img = document.createElement('img');
-								img.src = 'images/photography/' + p.file;
+								img.src = url;
 								img.alt = p.alt || 'Photograph';
 								img.loading = 'lazy';
 								a.appendChild(img);
