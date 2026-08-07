@@ -938,9 +938,14 @@ ul.list-styled {
 ul.list-styled li {
 	color: #062637;
 	padding: 2px 0;
-	padding-left: 40px;
-	text-indent: -40px;
+	padding-left: 60px;
+	text-indent: -60px;
 	position: relative;
+}
+
+.list-styled ul li em,
+ul.list-styled li em {
+	font-weight: 600;
 }
 
 .list-styled ul li:before,
