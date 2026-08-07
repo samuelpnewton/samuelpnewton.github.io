@@ -36,19 +36,6 @@
 			height: auto;
 			object-fit: contain;
 		}
-		/* BBC's mark and USA Today's wordmark both sit small/letterboxed inside their source
-		   files at the default chip height - size the chip and image up together so they
-		   read at a glance instead of being clipped by the fixed chip height */
-		.media-logo-chip:has(img[alt="BBC News"]),
-		.media-logo-chip:has(img[alt="USA Today"]) {
-			height: 72px;
-			padding: 10px 20px;
-		}
-		.media-logo-chip img[alt="BBC News"],
-		.media-logo-chip img[alt="USA Today"] {
-			max-height: 52px;
-			max-width: 220px;
-		}
 		/* theme only hides the photo overlay at desktop (>=992px); hide it always so the portrait shows on mobile too */
 		#author.s-overlay:before {
 			display: none;
