@@ -23,8 +23,11 @@
 		/* theme also forces background-position:left on mobile, cropping the face out of frame */
 		@media (max-width: 991px) {
 			#about-hero.section-about {
-				background-position: center right;
+				background-position: 65% center;
 			}
+		}
+		#about-hero {
+			min-height: 480px;
 		}
 	</style>
 </head>
@@ -122,27 +125,7 @@
 				</div>
 			</section>
 
-			<section id="about-hero" class="ls s-overlay s-py-90 s-py-xl-60 section-about">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 offset-lg-2">
-							<div class="divider-xl-40"></div>
-							<p class="mb-2 color-dark">About</p>
-							<h2 class="special-heading">
-								<span>Samuel P. Newton</span>
-							</h2>
-							<div class="divider-40"></div>
-							<p class="excerpt">
-								Associate Professor of Law<br>
-								University of Idaho College of Law
-							</p>
-							<div class="divider-40"></div>
-							<img src="images/signature.png" alt="Samuel P. Newton signature">
-							<div class="divider-xl-40"></div>
-						</div>
-					</div>
-				</div>
-			</section>
+			<section id="about-hero" class="ls s-overlay s-py-90 s-py-xl-60 section-about" aria-label="Samuel P. Newton"></section>
 
 			<section class="ls ms s-pt-90 s-pb-80 s-py-xl-60">
 				<div class="container">

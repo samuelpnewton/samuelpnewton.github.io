@@ -40,10 +40,11 @@
 		#author.s-overlay:before {
 			display: none;
 		}
-		/* theme also forces background-position:left on mobile, cropping the face out of frame */
+		/* theme also forces background-position:left on mobile, cropping the face out of frame;
+		   65% keeps the subject's face right-of-center, clear of the left-aligned text/button */
 		@media (max-width: 991px) {
 			#author.section-about {
-				background-position: center right;
+				background-position: 65% center;
 			}
 		}
 	</style>
@@ -143,8 +144,6 @@
 							</p>
 							<div class="divider-40"></div>
 							<a href="author.html" class="btn btn-maincolor">About &amp; CV</a>
-							<div class="divider-40"></div>
-							<img src="images/signature.png" alt="Samuel P. Newton signature">
 							<div class="divider-xl-40"></div>
 						</div>
 					</div>
