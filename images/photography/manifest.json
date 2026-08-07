@@ -12,12 +12,6 @@
     "h": 1129
   },
   {
-    "file": "Img-1140.jpeg",
-    "alt": "Img-1140",
-    "w": 1372,
-    "h": 784
-  },
-  {
     "file": "Just above Taisten-Tesido, Italy.jpeg",
     "alt": "Just above Taisten-Tesido, Italy",
     "w": 5712,
@@ -40,5 +34,11 @@
     "alt": "Watercolor, Antibes, France",
     "w": 714,
     "h": 950
+  },
+  {
+    "file": "Watercolor, Florence, Italy.jpeg",
+    "alt": "Watercolor, Florence, Italy",
+    "w": 1372,
+    "h": 784
   }
 ]
