@@ -6,6 +6,24 @@
     "h": 1792
   },
   {
+    "file": "Castle on Cliffs of Moher, Ireland.png",
+    "alt": "Castle on Cliffs of Moher, Ireland",
+    "w": 1792,
+    "h": 2390
+  },
+  {
+    "file": "Cliffs of Moher, Ireland.png",
+    "alt": "Cliffs of Moher, Ireland",
+    "w": 2820,
+    "h": 1504
+  },
+  {
+    "file": "Coast of Ireland.png",
+    "alt": "Coast of Ireland",
+    "w": 3309,
+    "h": 1115
+  },
+  {
     "file": "Delicate Arch, Utah.png",
     "alt": "Delicate Arch, Utah",
     "w": 1792,
@@ -34,6 +52,12 @@
     "alt": "Florence, Italy",
     "w": 896,
     "h": 1195
+  },
+  {
+    "file": "Garden of a Thousand Buddhas, Arlee, Montana.png",
+    "alt": "Garden of a Thousand Buddhas, Arlee, Montana",
+    "w": 2048,
+    "h": 2048
   },
   {
     "file": "Heading up to the Dolomites, Italy.jpeg",
@@ -76,6 +100,12 @@
     "alt": "Riomaggiore, Cinque Terre, Italy",
     "w": 1792,
     "h": 2390
+  },
+  {
+    "file": "Skellig Michel, Ireland.png",
+    "alt": "Skellig Michel, Ireland",
+    "w": 2390,
+    "h": 1792
   },
   {
     "file": "St Ignatius, Montana.png",
