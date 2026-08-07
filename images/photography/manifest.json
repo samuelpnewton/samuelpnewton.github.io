@@ -1,7 +1,9 @@
 [
   {
     "file": "IMG_1140.jpeg",
-    "alt": "Img 1140"
+    "alt": "Img 1140",
+    "w": 1372,
+    "h": 784
   },
   {
     "file": "IMG_1730.jpeg",
@@ -11,7 +13,9 @@
   },
   {
     "file": "IMG_1770.jpeg",
-    "alt": "Img 1770"
+    "alt": "Img 1770",
+    "w": 5712,
+    "h": 4284
   },
   {
     "file": "IMG_2214.jpeg",
