@@ -1,5 +1,41 @@
 [
   {
+    "file": "Big Mountain Panorama, Whitefish, Montana.jpg",
+    "alt": "Big Mountain Panorama, Whitefish, Montana",
+    "w": 1800,
+    "h": 753
+  },
+  {
+    "file": "Big Mountain, Whitefish, Montana.jpg",
+    "alt": "Big Mountain, Whitefish, Montana",
+    "w": 1800,
+    "h": 1349
+  },
+  {
+    "file": "Buddha statute, Bodh Gaya, India.jpg",
+    "alt": "Buddha statute, Bodh Gaya, India",
+    "w": 1800,
+    "h": 1350
+  },
+  {
+    "file": "Castle on Cliffs of Moher, Ireland.jpg",
+    "alt": "Castle on Cliffs of Moher, Ireland",
+    "w": 1350,
+    "h": 1800
+  },
+  {
+    "file": "Cliffs of Moher, Ireland.jpg",
+    "alt": "Cliffs of Moher, Ireland",
+    "w": 1800,
+    "h": 960
+  },
+  {
+    "file": "Coast of Ireland.jpg",
+    "alt": "Coast of Ireland",
+    "w": 1800,
+    "h": 607
+  },
+  {
     "file": "Delicate Arch, Utah.jpg",
     "alt": "Delicate Arch, Utah",
     "w": 1350,
@@ -18,10 +54,28 @@
     "h": 1195
   },
   {
+    "file": "East Glacier National Park.jpg",
+    "alt": "East Glacier National Park",
+    "w": 1800,
+    "h": 1294
+  },
+  {
+    "file": "Fairy Pools, Isle of Skye, Scotland.jpg",
+    "alt": "Fairy Pools, Isle of Skye, Scotland",
+    "w": 1800,
+    "h": 1350
+  },
+  {
     "file": "Florence, Italy.jpg",
     "alt": "Florence, Italy",
     "w": 896,
     "h": 1195
+  },
+  {
+    "file": "Garden of a Thousand Buddhas, Arlee, Montana.jpg",
+    "alt": "Garden of a Thousand Buddhas, Arlee, Montana",
+    "w": 1800,
+    "h": 1800
   },
   {
     "file": "Heading up to the Dolomites, Italy.jpeg",
@@ -30,10 +84,22 @@
     "h": 1129
   },
   {
+    "file": "Isle of Skye, Scotland.jpg",
+    "alt": "Isle of Skye, Scotland",
+    "w": 1350,
+    "h": 1800
+  },
+  {
     "file": "Le Nomade, Antibes, France.jpg",
     "alt": "Le Nomade, Antibes, France",
     "w": 896,
     "h": 1195
+  },
+  {
+    "file": "Mountain goat, Glacier National Park, Montana.jpg",
+    "alt": "Mountain goat, Glacier National Park, Montana",
+    "w": 1800,
+    "h": 1350
   },
   {
     "file": "Muir Woods 01, California.jpg",
@@ -60,6 +126,12 @@
     "h": 1800
   },
   {
+    "file": "Skellig Michel, Ireland.jpg",
+    "alt": "Skellig Michel, Ireland",
+    "w": 1800,
+    "h": 1350
+  },
+  {
     "file": "St Ignatius, Montana.jpg",
     "alt": "St Ignatius, Montana",
     "w": 1800,
@@ -68,6 +140,12 @@
   {
     "file": "Taisten:Tesido, Italy.jpg",
     "alt": "Taisten:Tesido, Italy",
+    "w": 1800,
+    "h": 1350
+  },
+  {
+    "file": "Taj Mahal, India.jpg",
+    "alt": "Taj Mahal, India",
     "w": 1800,
     "h": 1350
   },
