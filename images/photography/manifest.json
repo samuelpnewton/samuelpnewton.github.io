@@ -1,12 +1,12 @@
 [
   {
-    "file": "Delicate Arch, Utah.png",
+    "file": "Delicate Arch, Utah.jpg",
     "alt": "Delicate Arch, Utah",
-    "w": 1792,
-    "h": 2390
+    "w": 1350,
+    "h": 1800
   },
   {
-    "file": "Dingle Peninsula, Ireland.png",
+    "file": "Dingle Peninsula, Ireland.jpg",
     "alt": "Dingle Peninsula, Ireland",
     "w": 1536,
     "h": 1024
@@ -18,7 +18,7 @@
     "h": 1195
   },
   {
-    "file": "Florence, Italy.PNG",
+    "file": "Florence, Italy.jpg",
     "alt": "Florence, Italy",
     "w": 896,
     "h": 1195
@@ -30,16 +30,16 @@
     "h": 1129
   },
   {
-    "file": "Le Nomade, Antibes, France.PNG",
+    "file": "Le Nomade, Antibes, France.jpg",
     "alt": "Le Nomade, Antibes, France",
     "w": 896,
     "h": 1195
   },
   {
-    "file": "Muir Woods 01, California.png",
+    "file": "Muir Woods 01, California.jpg",
     "alt": "Muir Woods 01, California",
-    "w": 2390,
-    "h": 1792
+    "w": 1800,
+    "h": 1350
   },
   {
     "file": "Muir Woods 02, California.jpeg",
@@ -48,28 +48,28 @@
     "h": 1193
   },
   {
-    "file": "Narrows, Zion National Park, Utah.png",
+    "file": "Narrows, Zion National Park, Utah.jpg",
     "alt": "Narrows, Zion National Park, Utah",
     "w": 1536,
     "h": 1024
   },
   {
-    "file": "Riomaggiore, Cinque Terre, Italy.png",
+    "file": "Riomaggiore, Cinque Terre, Italy.jpg",
     "alt": "Riomaggiore, Cinque Terre, Italy",
-    "w": 1792,
-    "h": 2390
+    "w": 1350,
+    "h": 1800
   },
   {
-    "file": "St Ignatius, Montana.png",
+    "file": "St Ignatius, Montana.jpg",
     "alt": "St Ignatius, Montana",
-    "w": 2390,
-    "h": 1792
+    "w": 1800,
+    "h": 1350
   },
   {
-    "file": "Taisten:Tesido, Italy.png",
+    "file": "Taisten:Tesido, Italy.jpg",
     "alt": "Taisten:Tesido, Italy",
-    "w": 2390,
-    "h": 1792
+    "w": 1800,
+    "h": 1350
   },
   {
     "file": "Watercolor, Antibes, France.jpeg",
@@ -78,7 +78,7 @@
     "h": 950
   },
   {
-    "file": "Watercolor, Basho.png",
+    "file": "Watercolor, Basho.jpg",
     "alt": "Watercolor, Basho",
     "w": 1536,
     "h": 1024
